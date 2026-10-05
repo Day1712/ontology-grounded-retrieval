@@ -1,0 +1,149 @@
+PREFIX : <https://www.onetcenter.org/rdf/schema/onet/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <https://www.onetcenter.org/rdf/resources/onet/>
+
+<TrainingAndExperienceCategory/05fa13b8-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 1 ;
+  :categoryDescription "None" ;
+  :refersTo <Element/55621b0d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0d03-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05faabf7-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 2 ;
+  :categoryDescription "Up to and including 1 month" ;
+  :refersTo <Element/55621b0d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0d03-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05faac1b-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 3 ;
+  :categoryDescription "Over 1 month, up to and including 3 months" ;
+  :refersTo <Element/55621b0d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0d03-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05faac3f-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 4 ;
+  :categoryDescription "Over 3 months, up to and including 6 months" ;
+  :refersTo <Element/55621b0d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0d03-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa1386-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 5 ;
+  :categoryDescription "Over 6 months, up to and including 1 year" ;
+  :refersTo <Element/55621b0d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0d03-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05faac64-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 6 ;
+  :categoryDescription "Over 1 year, up to and including 2 years" ;
+  :refersTo <Element/55621b0d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0d03-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05faac89-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 7 ;
+  :categoryDescription "Over 2 years, up to and including 4 years" ;
+  :refersTo <Element/55621b0d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0d03-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05faacad-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 8 ;
+  :categoryDescription "Over 4 years, up to and including 6 years" ;
+  :refersTo <Element/55621b0d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0d03-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05faacd1-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 9 ;
+  :categoryDescription "Over 6 years, up to and including 8 years" ;
+  :refersTo <Element/55621b0d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0d03-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05faacf6-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 10 ;
+  :categoryDescription "Over 8 years, up to and including 10 years" ;
+  :refersTo <Element/55621b0d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0d03-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa135a-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 11 ;
+  :categoryDescription "Over 10 years" ;
+  :refersTo <Element/55621b0d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0d03-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05faab08-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 1 ;
+  :categoryDescription "None" ;
+  :refersTo <Element/5569424d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0ae7-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05faabd1-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 2 ;
+  :categoryDescription "Up to and including 1 month" ;
+  :refersTo <Element/5569424d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0ae7-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa1661-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 3 ;
+  :categoryDescription "Over 1 month, up to and including 3 months" ;
+  :refersTo <Element/5569424d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0ae7-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa1636-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 4 ;
+  :categoryDescription "Over 3 months, up to and including 6 months" ;
+  :refersTo <Element/5569424d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0ae7-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa1492-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 5 ;
+  :categoryDescription "Over 6 months, up to and including 1 year" ;
+  :refersTo <Element/5569424d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0ae7-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa146b-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 6 ;
+  :categoryDescription "Over 1 year, up to and including 2 years" ;
+  :refersTo <Element/5569424d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0ae7-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa1442-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 7 ;
+  :categoryDescription "Over 2 years, up to and including 4 years" ;
+  :refersTo <Element/5569424d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0ae7-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05faaae4-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 8 ;
+  :categoryDescription "Over 4 years, up to and including 10 years" ;
+  :refersTo <Element/5569424d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0ae7-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa13ff-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 9 ;
+  :categoryDescription "Over 10 years" ;
+  :refersTo <Element/5569424d-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0ae7-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa64a3-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 1 ;
+  :categoryDescription "None or short demonstration" ;
+  :refersTo <Element/556ebf8e-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0a20-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa6361-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 2 ;
+  :categoryDescription "Anything beyond short demonstration, up to and including 1 month" ;
+  :refersTo <Element/556ebf8e-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0a20-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa631f-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 3 ;
+  :categoryDescription "Over 1 month, up to and including 3 months" ;
+  :refersTo <Element/556ebf8e-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0a20-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa62bb-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 4 ;
+  :categoryDescription "Over 3 months, up to and including 6 months" ;
+  :refersTo <Element/556ebf8e-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0a20-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa620a-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 5 ;
+  :categoryDescription "Over 6 months, up to and including 1 year" ;
+  :refersTo <Element/556ebf8e-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0a20-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa1720-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 6 ;
+  :categoryDescription "Over 1 year, up to and including 2 years" ;
+  :refersTo <Element/556ebf8e-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0a20-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa16de-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 7 ;
+  :categoryDescription "Over 2 years, up to and including 4 years" ;
+  :refersTo <Element/556ebf8e-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0a20-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa16b3-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 8 ;
+  :categoryDescription "Over 4 years, up to and including 10 years" ;
+  :refersTo <Element/556ebf8e-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0a20-603d-11f1-8990-005056bdd76e> .
+<TrainingAndExperienceCategory/05fa168a-603d-11f1-8990-005056bdd76e> a :TrainingAndExperienceCategory ;
+  :category 9 ;
+  :categoryDescription "Over 10 years" ;
+  :refersTo <Element/556ebf8e-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0a20-603d-11f1-8990-005056bdd76e> .

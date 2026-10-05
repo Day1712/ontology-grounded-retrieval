@@ -1,0 +1,64 @@
+# Type and relations per grounded O*NET branch (release 30.3). The subject of
+# each rule is O*NET's published branch IRI. ranking_method/represent.py reads
+# this file.
+
+@prefix cnlo: <https://linkeddata.competentnl.nl/def/competentnl#> .
+@prefix coreo: <http://purl.org/coreo#> .
+@prefix ext: <https://example.org/onet-retrieval#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+
+ext:branchType a rdf:Property ;
+    rdfs:label "branch type" ;
+    rdfs:comment "The class every element under this O*NET branch is typed with." .
+
+ext:branchRelation a rdf:Property ;
+    rdfs:label "branch relation" ;
+    rdfs:comment "The relation by which a role requires an element of this branch." .
+
+ext:branchHolding a rdf:Property ;
+    rdfs:label "branch holding" ;
+    rdfs:comment "The relation by which a candidate holds an element of this branch." .
+
+# 1.A Abilities
+<https://www.onetcenter.org/rdf/resources/onet/Element/51c06ff5-1b12-11ea-8239-782bcb5df6ac>
+    ext:branchType cnlo:HumanCapability ;
+    ext:branchRelation cnlo:requires ;
+    ext:branchHolding schema:skills .
+
+# 1.D Work Styles
+<https://www.onetcenter.org/rdf/resources/onet/Element/4c961242-cf53-11f0-93d6-005056bdd76e>
+    ext:branchType cnlo:HumanAspectType ;
+    ext:branchRelation cnlo:requires ;
+    ext:branchHolding ext:workStyle .
+
+# 2.A Essential Skills
+<https://www.onetcenter.org/rdf/resources/onet/Element/53e40358-1b12-11ea-8239-782bcb5df6ac>
+    ext:branchType cnlo:HumanCapability ;
+    ext:branchRelation cnlo:requires ;
+    ext:branchHolding schema:skills .
+
+# 2.B Transferable Skills
+<https://www.onetcenter.org/rdf/resources/onet/Element/54141183-1b12-11ea-8239-782bcb5df6ac>
+    ext:branchType cnlo:HumanCapability ;
+    ext:branchRelation cnlo:requires ;
+    ext:branchHolding schema:skills .
+
+# 2.C Knowledge
+<https://www.onetcenter.org/rdf/resources/onet/Element/548846d3-1b12-11ea-8239-782bcb5df6ac>
+    ext:branchType cnlo:KnowledgeArea ;
+    ext:branchRelation cnlo:requires ;
+    ext:branchHolding schema:skills .
+
+# 2.E Software Skills (software categories; typed as a resource, not a human aspect)
+<https://www.onetcenter.org/rdf/resources/onet/Element/17a45e39-4d80-11f1-8990-005056bdd76e>
+    ext:branchType coreo:ResourceType ;
+    ext:branchRelation ext:requiresTechnology ;
+    ext:branchHolding ext:usesTechnology .
+
+# 4.A Work Activities (generalized work activity level)
+<https://www.onetcenter.org/rdf/resources/onet/Element/55ed6fb2-1b12-11ea-8239-782bcb5df6ac>
+    ext:branchType coreo:TaskType ;
+    ext:branchRelation ext:involvesActivity ;
+    ext:branchHolding ext:performsActivity .

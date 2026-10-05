@@ -1,0 +1,4 @@
+FullName,first_name,last_name,race,gen,group,set,source_table,rank_in_group,dolma_first_freq,dolma_first_lg_freq,dolma_full_name_freq,distinctiveness
+Pascal Williams,Pascal,Williams,,M,LM,lexical_probe,,1,,,,
+Ada Williams,Ada,Williams,,F,LF,lexical_probe,,1,,,,
+Ruby Williams,Ruby,Williams,,F,LF,lexical_probe,,2,,,,

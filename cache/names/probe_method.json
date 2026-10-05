@@ -1,0 +1,2421 @@
+{
+ "meta": {
+  "format": 1,
+  "model": "intfloat/e5-base-v2",
+  "semantic_threshold": 0.83,
+  "lexical_threshold": -Infinity,
+  "vocabulary": 316,
+  "ordinal": 2,
+  "design_set": "lexical_probe",
+  "names": [
+   "Pascal Williams",
+   "Ada Williams",
+   "Ruby Williams"
+  ],
+  "focal": 100,
+  "ladder": "concepts + ordinal",
+  "k": 10
+ },
+ "focal": {
+  "cv::oneitem::11-3051.00::detailed::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::11-3051.00::formal::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::13-1041.00::detailed::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::13-1161.00::casual::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 5,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 5,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 5,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::13-1161.00::concise::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 3,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::15-1252.00::casual::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::15-1252.00::formal::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::15-2051.00::concise::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::17-2141.00::casual::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0,
+     "queries_score_changed": 0,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0,
+     "queries_score_changed": 0,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0,
+     "queries_score_changed": 0,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::19-5011.00::detailed::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::21-1012.00::formal::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::21-1021.00::detailed::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::21-1022.00::detailed::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 7,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 7,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 7,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::21-1023.00::casual::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::25-2011.00::concise::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 4,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::27-1024.00::formal::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 2,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::29-2052.00::detailed::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::33-3021.00::detailed::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 4,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::35-2021.00::casual::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::35-3023.00::casual::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::35-3031.00::concise::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::39-9011.00::realistic::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::39-9032.00::realistic::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::41-2031.00::formal::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::41-4012.00::realistic::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 4,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::43-3031.00::casual::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::43-9061.00::realistic::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::47-2061.00::concise::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::47-2111.00::formal::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::51-4121.00::realistic::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::53-3032.00::concise::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.004784712419766441,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::53-3033.00::formal::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::oneitem::53-7051.00::realistic::0": {
+   "batch": "oneitem",
+   "queries": 490,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.00478471241976644,
+     "queries_score_changed": 15,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::11-1021.00::casual::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::13-1199.04::detailed::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::17-2071.00::detailed::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 6,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 6,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 6,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::17-2112.00::detailed::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 4,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::17-2141.00::formal::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0,
+     "queries_score_changed": 0,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0,
+     "queries_score_changed": 0,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0,
+     "queries_score_changed": 0,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::17-2199.03::realistic::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::19-4099.01::formal::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 2,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::25-2031.00::concise::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 3,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::27-1024.00::concise::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::27-2012.00::realistic::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 3,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::29-1141.00::concise::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 2,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::29-1229.01::casual::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::29-2052.00::concise::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::31-9099.01::concise::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::33-3021.00::casual::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::35-3031.00::casual::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::37-1011.00::detailed::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480945,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::37-2012.00::casual::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::39-9011.00::realistic::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::41-1011.00::casual::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::41-2031.00::formal::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::43-6014.00::casual::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::47-1011.00::concise::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::47-1011.00::realistic::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::47-2111.00::realistic::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::51-4041.00::realistic::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::51-4121.00::formal::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::51-9061.00::formal::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::51-9111.00::formal::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 2,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::53-3032.00::detailed::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::53-3032.00::realistic::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::53-7062.00::concise::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.002879476374480946,
+     "queries_score_changed": 16,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::53-7065.00::detailed::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::twoitem::53-7065.00::formal::0": {
+   "batch": "twoitem",
+   "queries": 494,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0028794763744809456,
+     "queries_score_changed": 16,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::11-9199.01::realistic::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::13-1041.00::formal::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::15-1299.01::concise::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::15-1299.01::realistic::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::17-2199.03::detailed::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::19-5011.00::concise::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::19-5011.00::detailed::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::21-1012.00::detailed::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::21-1023.00::formal::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 4,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::25-2011.00::realistic::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::25-2031.00::casual::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::27-1026.00::concise::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::27-1026.00::formal::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::29-2052.00::concise::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.003097009664011183,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.003097009664011183,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.003097009664011183,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::29-2061.00::detailed::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::29-2099.01::detailed::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::33-3051.00::casual::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::35-2014.00::realistic::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::35-2021.00::casual::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 2,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::35-3023.00::detailed::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::39-9031.00::realistic::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::41-2031.00::realistic::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::43-1011.00::casual::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::47-2111.00::formal::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.003097009664011183,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.003097009664011183,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.003097009664011183,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::49-3023.00::casual::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 3,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::49-3023.00::concise::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 4,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::49-9071.00::concise::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::49-9071.00::formal::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::51-9111.00::casual::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::51-9111.00::concise::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::51-9111.00::formal::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 0,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::51-9111.00::realistic::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 1,
+     "left_top10": 0
+    }
+   }
+  },
+  "cv::threeitem::53-7062.00::detailed::0": {
+   "batch": "threeitem",
+   "queries": 493,
+   "by_name": {
+    "Pascal Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ada Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 4,
+     "left_top10": 0
+    },
+    "Ruby Williams": {
+     "mean_delta_score": 0.0030970096640111832,
+     "queries_score_changed": 25,
+     "entered_top10": 4,
+     "left_top10": 0
+    }
+   }
+  }
+ }
+}

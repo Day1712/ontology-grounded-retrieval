@@ -1,0 +1,635 @@
+@base <https://linkeddata.competentnl.nl/def/competentnl#> .
+@prefix cnlo: <https://linkeddata.competentnl.nl/def/competentnl#> .
+@prefix cnlb: <https://linkeddata.competentnl.nl/thes/begrippen#> .
+@prefix esco: <http://data.europa.eu/esco/model#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix coreo: <http://purl.org/coreo#> .
+
+<https://linkeddata.competentnl.nl/def/competentnl#> rdf:type owl:Ontology, dcat:Dataset ;
+													 # dcterms:accessRights <> ;
+                                                     rdfs:comment "The conceptual model of this ontology is based upon the Competence Reference (Core-O) Ontology for Professional and Learning Ecosystems as modelled by Calhau et al (March 2024). Some of the classes in the CompetentNL ontology are inspired and based on concepts from the Core-O ontology."@en ;
+                                                     dcterms:description "Dit is de ontologie van CompetentNL"@nl;
+													 # dcterms:license <> ;
+													 dcterms:modified "2026-07-14"^^xsd:date ;
+                                                     dcterms:title "CompetentNL Ontologie"@nl ;
+													 dcterms:publisher "CompetentNL"@nl ;
+                                                     vann:preferredNamespacePrefix "cnlo" ;
+													 vann:preferredNamespace cnlo: ;
+													 rdfs:label "CompetentNL Ontologie"@nl ;
+													 owl:imports dcterms: ;
+													 owl:imports pav: ;
+													 owl:imports skos: ; 
+													 owl:imports prov: ;
+													 owl:versionInfo "0.10" ;
+													 owl:versionInfo "0.11: include coreo; disambiguation skill, vaardigheid; remove examples." ;
+                                                     owl:versionInfo "1.0.0: add language proficiency, improve definitions and other minor improvements.";
+													 owl:versionInfo "2.0.0: adapt SHACL, add more specific properties, tweak labels and comments" ; 
+                                                     owl:versionInfo "2.1.0: update to SHACL for language proficiency" ;
+													 pav:previousVersion "2.0.0" ;
+													 pav:version "2.1.0" ;
+.
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://linkeddata.competentnl.nl/def/competentnl#prescribes
+cnlo:prescribes rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf skos:related ;
+              rdfs:domain cnlo:EducationalNorm ;
+              rdfs:range cnlo:HumanAspectType ;
+			  rdfs:label "prescribes"@en ,              
+				"schrijft voor"@nl ;
+              skos:definition "Een opleidingsnorm schrijft voor dat een vaardigheid of kennisgebied beheerst zal worden door degene die een opleiding met deze opleidingsnorm behaalt."@nl ,
+                              "An educational norm prescribes that a certain human capability or knowledge shall be mastered by the person obtaining the qualification with this norm."@en ;
+.
+
+### https://linkeddata.competentnl.nl/def/competentnl#prescribesHATEssential
+cnlo:prescribesHATEssential rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf cnlo:prescribes ;
+               rdfs:domain cnlo:EducationalNorm ;
+               rdfs:range cnlo:HumanAspectType ;
+               rdfs:label "prescribes essential"@en ,
+                          "schrijft essentieel voor"@nl ;
+               skos:definition "De opleidingsnorm schrijft voor dat het essentieel is dat een vaardigheid of kennisgebied beheerst zal worden door degene die een opleiding met deze opleidingsnorm behaalt."@nl ,
+                               "The educational norm prescribes that it is essential that a certain human capability or knowledge shall be mastered by the person obtaining the qualification with this norm."@en .
+
+### https://linkeddata.competentnl.nl/def/competentnl#prescribesHATImportant
+cnlo:prescribesHATImportant rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf cnlo:prescribes ;
+               rdfs:domain cnlo:EducationalNorm ;
+               rdfs:range cnlo:HumanAspectType ;
+               rdfs:label "prescribes important"@en ,
+                          "schrijft belangrijk voor"@nl ;
+               skos:definition "De opleidingsnorm schrijft voor dat het belangrijk is dat een vaardigheid of kennisgebied beheerst zal worden door degene die een opleiding met deze opleidingsnorm behaalt."@nl ,
+                               "The educational norm prescribes that it is important that a certain human capability or knowledge shall be mastered by the person obtaining the qualification with this norm."@en .
+
+### https://linkeddata.competentnl.nl/def/competentnl#prescribesHATSomewhat
+cnlo:prescribesHATSomewhat rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf cnlo:prescribes ;
+               rdfs:domain cnlo:EducationalNorm ;
+               rdfs:range cnlo:HumanAspectType ;
+               rdfs:label "prescribes somewhat"@en ,
+                          "schrijft enigszins voor"@nl ;
+               skos:definition "De opleidingsnorm schrijft voor dat het enigszins relevant is dat een vaardigheid of kennisgebied beheerst zal worden door degene die een opleiding met deze opleidingsnorm behaalt."@nl ,
+                               "The educational norm prescribes that it is somewhat relevant that a certain human capability or knowledge shall be mastered by the person obtaining the qualification with this norm."@en .
+
+###  https://linkeddata.competentnl.nl/def/competentnl#requires
+cnlo:requires rdf:type owl:ObjectProperty ;
+               rdfs:domain cnlo:Occupation ;
+               rdfs:range cnlo:HumanAspectType ;
+               rdfs:label "requires"@en ,
+                          "vereist"@nl ;
+               skos:definition "Geeft aan dat voor een bepaald beroep een vaardigheid of kennis over een bepaald gebied van iemand vereist."@nl ,
+                               "Indicates that a particular occupation requires a human capability or knowledge from a certain area from someone."@en .
+							   
+###  https://linkeddata.competentnl.nl/def/competentnl#requiresHATEssential
+cnlo:requiresHATEssential rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf cnlo:requires ;
+               rdfs:domain cnlo:Occupation ;
+               rdfs:range cnlo:HumanAspectType ;
+               rdfs:label "essential human aspect"@en ,
+                          "essentieel menselijk aspect"@nl ;
+               skos:definition "Geeft aan dat voor een bepaald beroep een vaardigheid of kennis over een bepaald gebied essentieel is."@nl ,
+                               "Indicates that a particular occupation requires an essential human capability or knowledge from a certain area from someone."@en ;
+			   rdfs:comment "Deze relatie komt overeen met een score van 3 \"erg relevant\" in de beroependatabase van het UWV."@nl ,
+							"This property corresponds to a score of 3 \"highly relevant\" in the occupation database of the UWV."@en ;
+.
+							
+###  https://linkeddata.competentnl.nl/def/competentnl#requiresHATImportant
+cnlo:requiresHATImportant rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf cnlo:requires ;
+               rdfs:domain cnlo:Occupation ;
+			   rdfs:range cnlo:HumanAspectType ;
+               rdfs:label "important human aspect"@en ,
+                          "belangrijk menselijk aspect"@nl ;
+               skos:definition "Geeft aan dat voor een bepaald beroep een vaardigheid of kennis over een bepaald gebied belangrijk is."@nl ,
+                               "Indicates that a particular occupation requires an important human capability or knowledge from a certain area from someone."@en ;
+			   rdfs:comment "Deze relatie komt overeen met een score van 2 \"redelijk relevant\" in de beroependatabase van het UWV."@nl ,
+							"This property corresponds to a score of 2 \"moderately relevant\" in the occupation database of the UWV."@en ;
+.
+
+###  https://linkeddata.competentnl.nl/def/competentnl#requiresHATSomewhat
+cnlo:requiresHATSomewhat rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf cnlo:requires ;
+               rdfs:domain cnlo:Occupation ;
+               rdfs:range cnlo:HumanAspectType ;
+               rdfs:label "enigszins relevant menselijk aspect"@nl ,
+                          "somewhat relevant human aspect"@en ;
+               skos:definition "Geeft aan dat voor een bepaald beroep een vaardigheid of kennis over een bepaald gebied enigszins relevant is."@nl ,
+                               "Indicates that a particular occupation somewhat requires a human capability or knowledge from a certain area from someone."@en ;
+			   rdfs:comment "Deze relatie komt overeen met een score van 1 \"nauwelijks relevant\" in de beroependatabase van het UWV."@nl ,
+							"This property corresponds to a score of 1 \"hardly relevant\" in the occupation database of the UWV."@en ;
+.
+
+###  https://linkeddata.competentnl.nl/def/competentnl#closeMatchESCO
+cnlo:closeMatchESCO rdf:type owl:ObjectProperty ;
+		 dcterms:subject cnlb:c_4ABDF0772F ;
+         rdfs:subPropertyOf skos:closeMatch ;
+         rdfs:domain cnlo:HumanAspectType;
+         rdfs:range esco:Skill ;
+         rdfs:label "Close match in ESCO"@en ,
+                    "Zeer vergelijkbaar in ESCO"@nl ;
+         skos:definition "Relateert een CNL skill (cnlo:HumanAspectType) aan een ESCO skill die bijna hetzelfde is."@nl ,
+                         "Relates a CNL human aspect type to an ESCO skill that is almost the same."@en .
+
+##  https://linkeddata.competentnl.nl/def/competentnl#closeMatchONET
+cnlo:closeMatchONET rdf:type owl:ObjectProperty ;
+		 dcterms:subject cnlb:c_261A5714CD ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain cnlo:HumanAspectType ;
+         rdfs:range skos:Concept ;
+         rdfs:label "Close match in ONET"@en ,
+                    "Zeer vergelijkbaar in ONET"@nl ;
+         skos:definition "Relateert een CNL skill (cnlo:HumanAspectType) aan een ONET Skill code. De relatie geeft aan dat een vaardigheid hetzelfde of bijna hetzelfde concept is als een ONET Skill. ONET is een ontologie ontwikkeld door het Department of Labor van de Verenigde Staten van beroepen met hun vereiste kennis, vaardigheden en capaciteiten, evenals hoe het werk wordt uitgevoerd in taken, werkactiviteiten en andere descriptoren."@nl ,
+                         "Relates a CNL human aspect type to an ONET Skill code. The relationship indicates that a skill (cnlo:HumanAspectType) is the same or nearly the same concept as an ONET Skill. ONET is an ontology developed by the U.S. Department of Labor that lists occupations and their required knowledge, skills, and abilities, as well as how work is performed in tasks, work activities, and other descriptors."@en .
+
+##  https://linkeddata.competentnl.nl/def/competentnl#closeMatchDigComp
+cnlo:closeMatchDigComp rdf:type owl:ObjectProperty ;
+		 rdfs:subPropertyOf skos:closeMatch ;
+         rdfs:domain cnlo:HumanCapability ;
+         rdfs:range skos:Concept ;
+         rdfs:label "close match in DigComp"@en ,
+                    "zeer vergelijkbaar in DigComp"@nl ;
+         skos:definition "Relateert een CNL vaardigheid aan een DigComp element die zeer vergelijkbaar."@nl ,
+                         "Relates a CNL human capability type to a DigComp element that it closely matches to."@en .						
+
+###  https://linkeddata.competentnl.nl/def/competentnl#broadMatchISCEDF
+cnlo:broadMatchISCEDF rdf:type owl:ObjectProperty ;
+		 dcterms:subject cnlb:c_E312347CE9 ;
+         rdfs:subPropertyOf skos:broadMatch ;
+         rdfs:domain cnlo:KnowledgeArea;
+         rdfs:range skos:Concept ;
+         rdfs:label "Broad match in ISCED-F"@en ,
+                    "Breder concept in ISCED-F"@nl ;
+         skos:definition "Relateert een CNL kennisgebied (cnlo:KnowledgeArea) aan een ISCED-F concept dat breder is."@nl ,
+                         "Relates a CNL knowledge area to an ISCED-F concept that is broader."@en .
+
+###  https://linkeddata.competentnl.nl/def/competentnl#hasLanguageActivityLevel
+cnlo:hasLanguageActivityLevel rdf:type owl:ObjectProperty ;
+              rdfs:domain cnlo:LanguageProficiency ;
+              rdfs:range cnlo:LanguageActivityLevel ;
+              rdfs:label "has language activity level"@en ,
+                         "heeft taalactiviteitsniveau"@nl ;
+              skos:definition "Geeft aan op welke combinaties van taalactiviteit en taalniveau op deze taalbeheersings van toepassing zij."@nl ,
+                              "Indicates to which language activity and language level apply for this particular the language proficiency."@en .
+						 
+###  https://linkeddata.competentnl.nl/def/competentnl#inLanguageActivity
+cnlo:inLanguageActivity rdf:type owl:ObjectProperty ;
+              rdfs:domain cnlo:LanguageActivityLevel ;
+              rdfs:range cnlo:LanguageActivity ;
+              rdfs:label "in language activity"@en ,
+                         "in taalactiviteit"@nl ;
+              skos:definition "Geeft aan op welke taalactiviteit(en) het taalbeheersingsniveau van toepassing is."@nl ,
+                              "Indicates to which language activity(ies) the language proficiency level applies."@en .
+
+###  https://linkeddata.competentnl.nl/def/competentnl#atLevel
+cnlo:atLevel rdf:type owl:ObjectProperty ;
+              rdfs:domain cnlo:LanguageActivityLevel ;
+              rdfs:range cnlo:ProficiencyLevel ;
+              rdfs:label "at level"@en ,
+                         "op niveau"@nl ;
+              skos:definition "Geeft aan op welk niveau de taalbeheersing is."@nl ,
+                              "Indicates the level of the language proficiency."@en .							  
+							 
+###  https://linkeddata.competentnl.nl/def/competentnl#inLanguage
+cnlo:inLanguage rdf:type owl:ObjectProperty ;
+              rdfs:domain cnlo:LanguageProficiency ;
+              rdfs:range cnlo:Language ;
+              rdfs:label "in language"@en ,
+                         "in taal"@nl ;
+              skos:definition "Geeft aan over welke taal de taalbeheersing gaat."@nl ,
+                              "Indicates which language the language proficiency concerns."@en .
+
+#################################################################
+#    Data properties
+#################################################################
+
+##  https://linkeddata.competentnl.nl/def/competentnl#hasRIASEC
+cnlo:hasRIASEC rdf:type owl:DatatypeProperty ;
+		 dcterms:subject cnlb:c_C4E7371ABB ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain cnlo:HumanCapability ;
+         rdfs:range xsd:string ;
+         rdfs:label "has RIASEC code"@en ,
+                    "heeft RIASEC code"@nl ;
+         skos:definition "Relateert een CNL vaardigheid aan een RIASEC interest code. RIASEC is een taxonomie van interesses gebaseerd op een theorie over carrières en beroepskeuze die oorspronkelijk werd ontwikkeld door de Amerikaanse psycholoog John L. Holland."@nl ,
+                         "Relates a CNL human capability type to a RIASEC interest code. RIASEC is a taxonomy of interests based on a theory of careers and career choice originally developed by American psychologist John L. Holland."@en .						
+
+##  https://linkeddata.competentnl.nl/def/competentnl#includesScopeNote
+cnlo:includesScopeNote rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf skos:ScopeNote ;
+        rdfs:domain cnlo:HumanAspectType ;
+        rdfs:range xsd:string ;
+        rdfs:label "includes"@en ,
+                "omvat"@nl ;
+        skos:definition "Met deze relatie kan extra informatie over een CNL skill (cnlo:HumanAspectType) gegeven worden welke concepten wel binnen een CNL skill vallen."@nl ,
+                        "This relationship can be used to provide additional information about a CNL human aspect type which concepts do fall within a CNL human aspect type."@en .
+						
+##  https://linkeddata.competentnl.nl/def/competentnl#excludesScopeNote
+cnlo:excludesScopeNote rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf skos:ScopeNote ;
+        rdfs:domain cnlo:HumanAspectType ;
+        rdfs:range xsd:string ;
+        rdfs:label "excludes"@en ,
+                   "sluit uit"@nl ;
+        skos:definition "Met deze relatie kan extra informatie over een CNL skill (cnlo:HumanAspectType) gegeven worden welke concepten niet binnen een CNL skill (cnlo:HumanAspectType) vallen."@nl ,
+                        "This relationship allows to provide additional information about a CNL human aspect type which concepts do not fall within a CNL human aspect type."@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://linkeddata.competentnl.nl/def/competentnl#HumanCapability
+cnlo:HumanCapability rdf:type owl:Class, sh:NodeShape ;
+	dcterms:subject cnlb:c_5EA3EE473F ;
+    sh:targetClass cnlo:HumanCapability ;
+    rdfs:subClassOf cnlo:HumanAspectType ,
+	                [ owl:unionOf ( coreo:HumanCapabilityType 
+					                coreo:Attitude ) ];
+    rdfs:label "Human Capability"@en ,
+                  "Vaardigheid"@nl ;
+    skos:definition "Een vaardigheid is een type skill (cnlo:HumanAspectType) van CompetentNL dat een individu handelingsbekwaam maakt om een specifieke taak binnen de context van een beroep of functie te kunnen uitvoeren."@nl ,
+                        "A human capability is a type of skill (cnlo:HumanAspectType) from CompetentNL that makes an individual capable of performing a specific task within the context of a occupation or position."@en ;
+	skos:note "Vaardigheden kunnen worden ontwikkeld door middel van opleiding (formeel of non-formeel) of (werk)ervaring."@nl ;
+	sh:property [
+        sh:name "Has exactly one notation"@en, "Heeft precies één notatie"@nl ;
+        sh:description "A human capability has exactly 1 notation property."@en, "Een vaardigheid heeft precies 1 notatie eigenschap."@nl ;
+        sh:path skos:notation ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ; 
+    sh:property [
+        sh:name "Has exactly one preferred label"@en, "Heeft precies één voorkeurslabel"@nl ;
+        sh:description "A human capability has exactly 1 preferred label property."@en, "Een vaardigheid heeft precies 1 voorkeurslabel eigenschap."@nl ;
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:name "Has exactly one definition"@en, "Heeft precies één definitie"@nl ;
+        sh:description "A human capability has exactly 1 definition property."@en, "Een vaardigheid heeft precies 1 definitie eigenschap."@nl ;
+        sh:path skos:definition ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:name "Has optional scope note"@en, "Heeft optionele scope notitie"@nl ;
+        sh:description "A human capability can have a scope note."@en, "Een vaardigheid kan een scope notitie hebben."@nl ;
+        sh:path skos:scopeNote ;
+    ] ;
+    sh:property [
+        sh:name "Is generated at exactly one time"@en, "Is gegenereerd op precies één tijdstip"@nl ;
+        sh:description "A human capability has exactly 1 generated at time property."@en, "Een vaardigheid heeft precies 1 gegenereerd op tijdstip eigenschap."@nl ;
+        sh:path prov:generatedAtTime ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+	sh:xor ( # als de Human Capability zich op het laagste niveau bevindt zijn ESCO en ONET aangeraden.
+		[ 	a sh:NodeShape ;
+		    sh:property [
+				sh:name "RIASEC code mandatory"@en, "RIASEC-code verplicht"@nl ;
+				sh:description "A human capability shall include at least one RIASEC code if it is a leaf node concept."@en, "Een vaardigheid bevat tenminste één RIASEC-code als het concept zich op het laagste niveau van de taxonomie bevindt."@nl ;
+				sh:path cnlo:hasRIASEC ;
+				sh:minCount 1 ;
+			] ;
+			sh:property [
+				sh:name "ESCO reference mandatory"@en, "ESCO-verwijzing verplicht"@nl ;
+				sh:description "A human capability shall include at least one reference to a related ESCO skill if it is a leaf node concept."@en, "Een vaardigheid bevat tenminste één referentie naar een ESCO-skill als het zich op het laagste niveau van de taxonomie bevindt."@nl ;
+				sh:path cnlo:closeMatchESCO ;
+				sh:minCount 1 ;
+			] ;
+			sh:property [
+				sh:name "O*NET reference recommended"@en, "O*NET-verwijzing aangeraden"@nl ;
+				sh:description "A human capability should include at least one reference to a related O*NET skill if it is a leaf node conceptr."@en, "Een vaardigheid zou tenminste één referentie naar een O*NET-skill moeten bevatten als het zich op het laagste niveau de taxonomie bevindt."@nl ;
+				sh:path cnlo:closeMatchONET ;
+				sh:minCount 1 ;
+				sh:severity sh:Warning ;
+			] ;
+		] [
+			sh:property [
+				sh:name "Broader relation mandatory for non-leaf nodes"@en, "Broader relatie verplicht voor andere lagen"@nl ;
+				sh:description "A human capability shall have a skos:broader relation unless it is a leaf node with RIASEC, ESCO and O*NET properties"@en, "Een menselijk aspect moet een skos:broader relatie hebben, tenzij het zich op het laagste niveau van de taxonomie bevindt met ESCO, O*NET en RIASEC relaties."@nl ;
+				sh:path skos:broader ;
+				sh:minCount 1;
+			] ;
+		]
+	 )
+.
+
+###  https://linkeddata.competentnl.nl/def/competentnl#KnowledgeArea
+cnlo:KnowledgeArea rdf:type owl:Class, sh:NodeShape ;
+	dcterms:subject cnlb:c_8C76A546DE ;
+    sh:targetClass cnlo:KnowledgeArea ;
+    rdfs:subClassOf cnlo:HumanAspectType,
+                    coreo:KnowledgeType ;
+    rdfs:label "Kennisgebied"@nl ,
+                "Knowledge Area"@en ;
+    skos:definition "Een kennisgebied is een type skill (cnlo:HumanAspectType) van CompetentNL in de vorm van een duidelijk afgebakend cluster van inhoudelijk verwante, vakspecifieke feiten, principes, theorieën en praktijken die een individu nodig heeft om een specifieke taak binnen de context van een beroep of functie uit te voeren."@nl ,
+                    "A knowledge area is a type of skill (cnlo:HumanAspectType) from CompetentNL in the form of a clearly defined cluster of content-related, subject-specific facts, principles, theories, and practices that an individual needs to perform a specific task within the context of a profession or job."@en ;
+    skos:note "Kennis kan worden ontwikkeld door middel van opleiding (formeel of non-formeel) of (werk)ervaring."@nl ;
+    sh:property [
+        sh:name "Has exactly one notation"@en, "Heeft precies één notatie"@nl ;
+        sh:description "A knowledge area has exactly 1 notation property."@en, "Een kennisgebied heeft precies 1 notatie eigenschap."@nl ;
+        sh:path skos:notation ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ; 
+    sh:property [
+        sh:name "Has exactly one preferred label"@en, "Heeft precies één voorkeurslabel"@nl ;
+        sh:description "A knowledge area has exactly 1 preferred label property."@en, "Een kennisgebied heeft precies 1 voorkeurslabel eigenschap."@nl ;
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:name "Has exactly one definition"@en, "Heeft precies één definitie"@nl ;
+        sh:description "A knowledge area has exactly 1 definition property."@en, "Een kennisgebied heeft precies 1 definitie eigenschap."@nl ;
+        sh:path skos:definition ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:name "Has optional scope note"@en, "Heeft optionele scope notitie"@nl ;
+        sh:description "A knowledge area can have a scope note."@en, "Een kennisgebied kan een scope notitie hebben."@nl ;
+        sh:path skos:scopeNote ;
+    ] ;
+    sh:property [
+        sh:name "Is generated at exactly one time"@en, "Is gegenereerd op precies één tijdstip"@nl ;
+        sh:description "A knowledge area has exactly 1 generated at time property."@en, "Een kennisgebied heeft precies 1 gegenereerd op tijdstip eigenschap."@nl ;
+        sh:path prov:generatedAtTime ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+	sh:xone ( # declares that a KnowledgeArea should either have an ISCED-F or have a skos:broader relation.
+		[   sh:property [
+			sh:description "A CNL Knowledge Area shall have an ISCED-F detailed field as its immediate ancestor one level broader if it's a leaf node."@en, "Een CNL kennisgebied heeft een ISCED-F Detailed Field als directe ouder één niveau hoger als het zich op het laagste niveau bevindt."@nl ;
+			sh:name "Parent relation to an ISCED-F Detailed Field"@en, "Ouder-kindrelatie met een ISCED-F Detailed Field"@nl ;
+			sh:path cnlo:broadMatchISCEDF ;
+			sh:minCount 1 ; ]
+		] 
+		[ sh:property [ 
+			sh:description "A CNL Knowledge Area should have a skos:broader relation to another CNL Knowledge Area unless it's a leaf node with an ISCED-F label."@en, "Een CNL kennisgebied moet een skos:broader relatie hebben naar een ander kennisgebied is behalve als het een blad is met een ISCED-F label."@nl ;
+			sh:name "Broader property mandatory without ISCED-F relation"@en, "Broader relatie verplicht tenzij ISCED-F relatie aanwezig"@nl ;
+			sh:path skos:broader ;
+			sh:minCount 1 ;
+		]
+	] )
+.
+
+###  https://linkeddata.competentnl.nl/def/competentnl#Occupation
+cnlo:Occupation rdf:type owl:Class, sh:NodeShape ;
+    sh:targetClass cnlo:Occupation ;
+    rdfs:subClassOf coreo:CapabilityRequiringRole ;
+    rdfs:label "Beroep"@nl ,
+        "Occupation"@en ;
+    skos:definition "An occupation is a coherent set of work tasks that require specific professional knowledge and skills (cnlo:HumanCapability) to perform, and that can continue to exist independently of the individual practitioner and is recognizable to society."@en ,
+        "Een beroep is een samenhangend geheel van arbeidstaken die voor de uitvoering een bepaalde vakkennis en -kunde vereisen, en dat losstaand van de individuele beroepsbeoefenaar kan voortbestaan en voor de maatschappij herkenbaar is."@nl ;
+	sh:property [
+        sh:name "Has at most one notation"@en, "Heeft maximaal één notatie"@nl ;
+        sh:description "An occupation has at most 1 notation property."@en, "Een beroep heeft maximaal 1 notatie-eigenschap."@nl ;
+        sh:path skos:notation ;
+        sh:maxCount 1 ;
+    ] ;  
+    sh:property [
+        sh:name "Has exactly one preferred label"@en, "Heeft precies één voorkeurslabel"@nl ;
+        sh:description "An occupation has exactly 1 preferred label property."@en, "Een beroep heeft precies 1 voorkeurslabel eigenschap."@nl ;
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:name "Has exactly one definition"@en, "Heeft precies één definitie"@nl ;
+        sh:description "An occupation has exactly 1 definition property."@en, "Een beroep heeft precies 1 definitie eigenschap."@nl ;
+        sh:path skos:definition ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+#    sh:property [ 
+#        sh:path skos:altLabel ;
+#    ] ;
+    sh:property [
+        sh:name "Requires at least one knowledge area"@en, "Vereist minimaal één kennisgebied"@nl ;
+        sh:description "An occupation should have at least 1 required knowledge area."@en, "Een beroep moet minimaal 1 vereist kennisgebied hebben."@nl ;
+        sh:path cnlo:requires ;
+        sh:qualifiedValueShape [
+            sh:class cnlo:KnowledgeArea ;
+        ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:qualifiedValueShapesDisjoint true ;
+        sh:message "An occupation needs to have at least one knowledge area." ;
+    ] ;
+    sh:property [
+        sh:name "Requires at least one human capability"@en, "Vereist minimaal één vaardigheid"@nl ;
+        sh:description "An occupation should have at least 1 required human capability."@en, "Een beroep moet minimaal 1 vereiste vaardigheid hebben."@nl ;
+        sh:path cnlo:requires ;
+        sh:qualifiedValueShape [
+            sh:class cnlo:HumanCapability ;
+        ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:qualifiedValueShapesDisjoint true ;
+        sh:message "An occupation needs to have at least one skill (cnlo:HumanCapability) instance." ;
+    ] ;
+.
+###  https://linkeddata.competentnl.nl/def/competentnl#EducationalNorm
+cnlo:EducationalNorm rdf:type owl:Class, sh:NodeShape ;
+    sh:targetClass cnlo:EducationalNorm ;
+    rdfs:label "Opleidingsnorm"@nl, "Educational Norm"@en ;
+    skos:definition "An educational norm is the set of competencies that qualify a graduate of a vocational training program to function in a profession or a group of related professions, in further education and as a citizen."@en, 
+        "Een opleidingsnorm is het geheel van bekwaamheden die een afgestudeerde van een beroepsopleiding kwalificeren voor het functioneren in een beroep of een groep van samenhangende beroepen, in het vervolgonderwijs én als burger."@nl ;
+    sh:property [
+        sh:name "Has exactly one notation"@en, "Heeft precies één notatie"@nl ;
+        sh:description "An educational norm has exactly 1 notation property."@en, "Een opleidingsnorm heeft precies 1 notatie eigenschap."@nl ;
+        sh:path skos:notation ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:name "Has exactly one preferred label"@en, "Heeft precies één voorkeurslabel"@nl ;
+        sh:description "An educational norm has exactly 1 preferred label property."@en, "Een opleidingsnorm heeft precies 1 voorkeurslabel eigenschap."@nl ;
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:name "Has exactly one definition"@en, "Heeft precies één definitie"@nl ;
+        sh:description "An educational norm has exactly 1 definition property."@en, "Een opleidingsnorm heeft precies 1 definitie eigenschap."@nl ;
+        sh:path skos:definition ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:name "Prescribes at least one human aspect"@en, "Schrijft minimaal één menselijk aspect voor"@nl ;
+        sh:description "An educational norm should have at least 1 prescribed knowledge area or human capability."@en, "Een opleidingsnorm moet minimaal 1 vereist kennisgebied of vaardigheid hebben."@nl ;
+        sh:path cnlo:prescribes ;
+        sh:class cnlo:HumanAspectType ;
+        sh:minCount 1 ;
+        sh:message "An educational norm needs to have at least one human aspect type."@en ;
+    ] ;
+.
+
+###  https://linkeddata.competentnl.nl/def/competentnl#HumanAspectType
+cnlo:HumanAspectType rdf:type owl:Class ;
+	   dcterms:subject cnlb:c_6DF1BB18A5 ;
+       rdfs:subClassOf coreo:HumanAspectType ,
+	                   skos:Concept ,
+                       prov:Entity ;
+       rdfs:label "Human Aspect Type"@en ,
+                  "Menselijk aspecttype"@nl ;
+       skos:definition "Een menselijk aspect omvat de kenmerken en kwaliteiten van een individu die van invloed zijn op de uitvoering van taken binnen een beroep. Deze aspecten kunnen vaardigheden (zoals handelingen met meetbare uitkomsten) en kennis (zoals vakspecifieke feiten en principes) omvatten die bijdragen aan de competenties van een persoon binnen een professionele context."@nl ,
+                           "A human aspect encapsulates the attributes and qualities of an individual which influence the execution of their tasks in their occupation. These aspects can be human capabilites (such as tasks with measurable results) and knowledge (such as facts and principles specific to an occupation), that contribute to the competency of a person to work in an occupational environment."@en ;
+       skos:note "Er zijn drie typen menselijk aspecttype: vaardigheden, kennis(gebieden), en taalbeheersing."@nl ;
+.
+
+###  https://linkeddata.competentnl.nl/def/competentnl#ChangeEvent
+cnlo:ChangeEvent rdf:type owl:Class ;
+        rdfs:subClassOf prov:Activity ;
+        rdfs:label "Wijzigingsgebeurtenis"@nl ,
+                   "Change Event"@en ;
+        skos:definition "Een veranderende actie binnen de graaf."@nl ,
+                        "A changing action within the graph."@en ;
+		.
+
+###  https://linkeddata.competentnl.nl/def/competentnl#MergeEvent
+cnlo:MergeEvent rdf:type owl:Class, sh:NodeShape ;
+        sh:targetClass cnlo:MergeEvent ;
+        rdfs:subClassOf cnlo:ChangeEvent ;
+        rdfs:label "Samenvoeging"@nl ,
+                   "Merge"@en ;
+        skos:definition "Een actie binnen de graaf die meerdere entiteiten samenvoegt tot één entiteit."@nl ,
+                        "An action within the graph that merges multiple entities into one entity."@en ;
+	sh:property [ 
+        sh:name "Invalidates at least two human aspects"@en, "Verklaart minimaal twee menselijke aspecten ongeldig"@nl ;
+        sh:description "An merge has at least 2 invalidates properties."@en, "Een samenvoeging heeft minimaal 2 verklaart ongeldig eigenschappen."@nl ;
+        sh:path prov:invalidated ;
+        sh:minCount 2 ;
+    ] ;
+    sh:property [
+        sh:name "Generates exactly one human aspect"@en, "Genereert precies één menselijk aspect"@nl ;
+        sh:description "A merge has exactly 1 generates property."@en, "Een samenvoeging heeft precies 1 genereert eigenschap."@nl ;
+        sh:path prov:generated ;
+        sh:mincount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+.
+
+
+###  https://linkeddata.competentnl.nl/def/competentnl#SplitEvent
+cnlo:SplitEvent rdf:type owl:Class, sh:NodeShape ;
+        sh:targetClass cnlo:SplitEvent ;
+        rdfs:subClassOf cnlo:ChangeEvent ;
+        rdfs:label "Splitsing"@nl ,
+                   "Split"@en ;
+        skos:definition "Een actie binnen de graaf die één entiteit opsplitst in meerdere entiteiten."@nl ,
+                        "An action within the graph that splits one entity into multiple entities."@en ;
+	sh:property [ 
+        sh:name "Invalidates exactly one human aspect"@en, "Verklaart precies één menselijk aspect ongeldig"@nl ;
+        sh:description "An split has exactly 1 invalidates properties."@en, "Een splitsing heeft precies 1 verklaart ongeldig eigenschap."@nl ;
+        sh:path prov:invalidated ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:name "Generates at least two human aspects"@en, "Genereert minimaal twee menselijke aspecten"@nl ;
+        sh:description "A split has at least 2 generates properties."@en, "Een splitsing heeft minimaal 2 genereert eigenschappen."@nl ;
+        sh:path prov:generated ;
+        sh:mincount 2 ;
+    ] ;
+.
+						
+###  https://linkeddata.competentnl.nl/def/competentnl#LanguageProficiency
+cnlo:LanguageProficiency rdf:type owl:Class, sh:NodeShape ;
+        sh:targetClass cnlo:LanguageProficiency ;
+		dcterms:subject cnlb:c_2547448145 ;
+		rdfs:comment "Een taalbeheersing geeft het begrip van een bepaalde taal aan. Het is verplicht aan te geven over welke taal de beheersing gaat. Het is optioneel om aan te geven welk niveau de beheersing heeft en welke taalactiviteiten op dat niveau worden beheerst. De modellering is gebaseerd op het Europese Referentiekader voor Talen."@nl, "A language proficiency indicates the understanding of a particular language. It is mandatory to indicate which language the profiency relates to. It is optional to indicate the level of proficiency and the language activities that are at that level. De modelling is based on the Commen European Reference Framework for Languages (CEFR)."@en ;
+        skos:definition "Een taalbeheersing is een type skill (cnlo:HumanAspectType) van CompetentNL in de vorm van het vermogen om binnen de context van een beroep of functie mondeling én schriftelijk effectief en adequaat te communiceren in een andere taal dan de Nederlandse."@nl ,
+            "Language proficiency is a type of skill (cnlo:HumanAspectType) from CompetentNL in the form of the ability to communicate effectively and adequately, both orally and in writing, in a language other than Dutch within the context of an occupation or position."@en ;
+        rdfs:subClassOf cnlo:HumanAspectType ;
+        sh:property [
+            sh:name "No Dutch language proficiency"@en, "Geen Nederlandse taalvaardigheid"@nl ;
+            sh:description "De taalbeheersingsmodule is niet bedoeld om Nederlandse taalvaardigheden te beschrijven. Gebruik in plaats hiervan de bedoelde concepten uit de vaardighedentaxonomie."@nl, "The language proficiency module is not intended to describe Dutch language proficiency. Please use the appropriate concepts from the skills taxonomy instead."@en ;
+            sh:path cnlo:inLanguage ;
+            sh:not [
+                sh:hasValue <https://www.omg.org/spec/LCC/Languages/ISO639-1-LanguageCodes/Dutch> ;
+            ] ;
+            sh:severity sh:Warning ;
+        ] ;
+		sh:property [
+			sh:name "At least one relation with a language"@en, "Minimaal één relatie met taal"@nl ;
+			sh:description "De taalvaardigheid moet beschrijven over welke vreemde taal het gaat."@nl, "The language proficiency shall specify which foreign language is concerned."@en ;
+			sh:path cnlo:inLanguage ;
+			sh:minCount 1 ;
+		] ;
+		sh:property [
+			sh:name "Optional relations with language activity level"@en, "Optionele relatie met taalactiviteitsniveau"@nl ;
+			sh:description "De taalvaardigheid kan een beschrijving bevatten van het specifieke niveau en de specifieke taalactiviteit waar het concept betrekking tot heeft. Dit moet met een cnlo:LanguageActivityLevel worden beschreven."@nl, "the language activity level may contain a description of the specific level and languagcy activity it concerns. If so, that should be represented via a cnlo:LanguageActivityLevel."@en ;
+			sh:path cnlo:hasLanguageActivityLevel ;
+			sh:class cnlo:LanguageActivityLevel ;
+		] ;
+		rdfs:seeAlso <https://www.coe.int/en/web/common-european-framework-reference-languages> ;
+        rdfs:label "Taalbeheersing"@nl ,
+                   "Language proficiency"@en ; .
+						
+###  https://linkeddata.competentnl.nl/def/competentnl#LanguageActivity
+cnlo:LanguageActivity rdf:type owl:Class ;
+		rdfs:subClassOf skos:Concept ;
+        rdfs:label "Taalactiviteit"@nl, "Language activity"@en ;
+        skos:definition "Een taalactiviteit is een handing waarin taalbeheersing tot uiting kan komen. De meest gebruikelijke taalactiviteiten zijn volgens het ERK 1) Lezen 2) Luisteren, 3) Gesproken productie, 4) Schrijven, and 5) Gesproken interactie."@nl ,
+        "The language activity is an action through which a language proficiency is exposed. The common language activities are according to the CEFR 1) Reading, 2) Listening, 3) Spoken production, 4) Writing, and 5) Spoken interaction. "@en .
+		
+###  https://linkeddata.competentnl.nl/def/competentnl#ProficiencyLevel
+cnlo:ProficiencyLevel rdf:type owl:Class ;
+		rdfs:subClassOf skos:Concept ;
+        rdfs:label "Beheersingsniveau"@nl ,
+                   "Proficiency level"@en ;
+        rdfs:comment "The level of proficiency in a foreign language that someone possesses. The language proficiency is commonly represented following the CEFR. These concepts are contained in the associated CNL Language Proficiency Taxonomy codelist."@en ,
+                        "Het beheersingsniveau dat iemand bezit in een (vreemde) taal. Het taalvaardigheidsniveau wordt doorgaans weergegeven volgend op het ERK. Deze concepten staan in de bijbehorende codelijst van de CNL Talenbeheersingstaxonomie"@nl .
+												
+###  https://linkeddata.competentnl.nl/def/competentnl#Language
+cnlo:Language rdf:type owl:Class ;
+		rdfs:subClassOf skos:Concept ;
+        rdfs:label "Taal"@nl ,
+                   "Language"@en ;
+        rdfs:comment "A language is defined following the ISO 639 standard. We recommend to instantiate this class following the RDF serialisation published by the Object Management Group."@en ,
+                        "Taal is gedefinieerd conform ISO 369. We raden aan om deze klasse te instantiëren met elementenn uit de serialisatie gepubliceerd door de Object Management Group."@nl ;
+		rdfs:seeAlso <https://www.omg.org/spec/LCC>, <https://www.omg.org/spec/LCC/Languages/ISO639-1-LanguageCodes.rdf>.
+		
+### https://linkeddata.competentnl.nl/def/competentnl#LanguageActivityLevel
+cnlo:LanguageActivityLevel rdf:type owl:Class, sh:NodeShape ;
+	rdfs:label "Language activity level"@en, 
+		"Taalactiviteitsniveau"@nl ;
+	rdfs:comment "The language activity level is a combination of a language activity (cnlo:LanguageActivity) and an associated level (cnlo:ProficiencyLevel)."@en ,
+		"Het taalactiviteitsniveau is een combinatie van een taalactiviteit (cnlo:LanguageActivity) en een bijbehorend niveau (cnlo:ProficiencyLevel)"@nl ;
+	sh:property [
+		sh:name "Optionele relatie met taalniveau"@nl, "Optional relation with proficiency level"@en ;
+		sh:description "Als een taalniveau wordt gespecificeerd, moet een element uit de bijbehorende ERK-taxonomie worden gebruikt"@nl, "If a proficiency level is specified, it shall be given via the CEFR taxonomy."@en ;
+		sh:path cnlo:atLevel ;
+		sh:class cnlo:ProficiencyLevel ;
+	] ;
+	sh:property [
+		sh:name "Gebruik maximaal één taalniveau"@nl, "Use a maximum of one proficiency level"@en ;
+		sh:description "Het is bedoeld gebruik om één taalniveau aan de taalbeheersing te koppelen: het laagste dat relevant is."@nl, "Only the lowest applicable proficiency level should be related to the language proficiency, instead of multiple."@en ;
+		sh:path cnlo:atLevel ;
+		sh:class cnlo:ProficiencyLevel ;
+		sh:maxCount 1 ;
+		sh:severity sh:Warning ;
+	] ;
+	sh:property [
+		sh:name "Optionele relatie met taalactiviteit"@nl, "Optional relation with language activity"@en ;
+		sh:description "If a language activity is specified, it shall come from the appropriate taxonomy."@en, "Als een taalactiviteit wordt gespecificeerd, moet een element uit de bijbehorende taxonomie worden gebruikt."@nl ;
+		sh:path cnlo:inLanguageActivity ;
+		sh:class cnlo:LanguageActivity ;
+	] ;
+.
+

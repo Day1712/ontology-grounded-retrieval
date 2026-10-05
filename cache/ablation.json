@@ -1,0 +1,1110 @@
+{
+ "means": {
+  "count": {
+   "none +ordinal": {
+    "oneitem": 0.6085050745478534,
+    "twoitem": 0.5299640090102203,
+    "threeitem": 0.5428935755490364
+   },
+   "lexical +ordinal": {
+    "oneitem": 0.8865770128663785,
+    "twoitem": 0.8870120047467518,
+    "threeitem": 0.9092554593397807
+   },
+   "lexical -ordinal": {
+    "oneitem": 0.717724920163682,
+    "twoitem": 0.8016164324933068,
+    "threeitem": 0.8534773067195144
+   },
+   "semantic +ordinal": {
+    "oneitem": 0.917453458229354,
+    "twoitem": 0.8274802662316008,
+    "threeitem": 0.8025861128304331
+   },
+   "semantic -ordinal": {
+    "oneitem": 0.7488191397944072,
+    "twoitem": 0.7402195332599077,
+    "threeitem": 0.7343610909087626
+   },
+   "lexical+semantic +ordinal": {
+    "oneitem": 0.9047549614462922,
+    "twoitem": 0.9078523628296126,
+    "threeitem": 0.9222827138931627
+   },
+   "lexical+semantic -ordinal": {
+    "oneitem": 0.748280229651331,
+    "twoitem": 0.8241980966237408,
+    "threeitem": 0.8694243828635282
+   }
+  },
+  "weighted": {
+   "none +ordinal": {
+    "oneitem": 0.5997912046335195,
+    "twoitem": 0.5203504005033228,
+    "threeitem": 0.5320991652581534
+   },
+   "lexical +ordinal": {
+    "oneitem": 0.8699293725678304,
+    "twoitem": 0.8674383169380704,
+    "threeitem": 0.8913919158460724
+   },
+   "lexical -ordinal": {
+    "oneitem": 0.7024594998129186,
+    "twoitem": 0.7827284721513145,
+    "threeitem": 0.8355258973303507
+   },
+   "semantic +ordinal": {
+    "oneitem": 0.8951497946276632,
+    "twoitem": 0.8027614496846941,
+    "threeitem": 0.7802880583358807
+   },
+   "semantic -ordinal": {
+    "oneitem": 0.7261236464610512,
+    "twoitem": 0.7145163863807487,
+    "threeitem": 0.7119438974492553
+   },
+   "lexical+semantic +ordinal": {
+    "oneitem": 0.8855435441445162,
+    "twoitem": 0.8855569858219126,
+    "threeitem": 0.902247914389213
+   },
+   "lexical+semantic -ordinal": {
+    "oneitem": 0.7294714892227757,
+    "twoitem": 0.801617319451757,
+    "threeitem": 0.8489921637284954
+   }
+  },
+  "qualified": {
+   "none +ordinal": {
+    "oneitem": 0.8694813127622104,
+    "twoitem": 0.879662151332772,
+    "threeitem": 0.8955191027288145
+   },
+   "lexical +ordinal": {
+    "oneitem": 0.8959937835633802,
+    "twoitem": 0.856796748671687,
+    "threeitem": 0.8356524253821078
+   },
+   "lexical -ordinal": {
+    "oneitem": 0.5675514594665002,
+    "twoitem": 0.5916347278048372,
+    "threeitem": 0.598527291434475
+   },
+   "semantic +ordinal": {
+    "oneitem": 0.9246500020612166,
+    "twoitem": 0.8732053784887387,
+    "threeitem": 0.8443508075564831
+   },
+   "semantic -ordinal": {
+    "oneitem": 0.5891770775205454,
+    "twoitem": 0.5713165075862073,
+    "threeitem": 0.5639767178543823
+   },
+   "lexical+semantic +ordinal": {
+    "oneitem": 0.8959216301277491,
+    "twoitem": 0.856171035109484,
+    "threeitem": 0.8331280121807272
+   },
+   "lexical+semantic -ordinal": {
+    "oneitem": 0.5780916703318175,
+    "twoitem": 0.597436486127625,
+    "threeitem": 0.6018128596790177
+   }
+  }
+ },
+ "contrasts": {
+  "does ordinal grounding help?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.1564747317949611,
+     "half": 0.01142315356641181,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.08365426620587178,
+     "half": 0.006306252329176667,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.05285833102963455,
+     "half": 0.004438793368182401,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.15607205492174053,
+     "half": 0.011378218492941574,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.08393966637015562,
+     "half": 0.00643398862361183,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.05325575066071772,
+     "half": 0.004497185777733629,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.31782995979593154,
+     "half": 0.017750254937992833,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.25873454898185894,
+     "half": 0.01453795617329499,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.23131515250170948,
+     "half": 0.012393826070397677,
+     "n": 493,
+     "distinguishable": true
+    }
+   }
+  },
+  "does concept grounding help?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.2962498868984388,
+     "half": 0.014593175872363903,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.3778883538193921,
+     "half": 0.011475613336029769,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.3793891383441264,
+     "half": 0.009865877700462168,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.2857523395109967,
+     "half": 0.014318953904848171,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.3652065853185898,
+     "half": 0.01122971637411674,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.3701487491310597,
+     "half": 0.009815084267574355,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.026440317365538642,
+     "half": 0.01810992782159666,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": -0.023491116223288047,
+     "half": 0.01841767013839092,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": -0.0623910905480874,
+     "half": 0.018371295662533815,
+     "n": 493,
+     "distinguishable": true
+    }
+   }
+  },
+  "does semantic linking help?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.018177948579913686,
+     "half": 0.005423676443839316,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.0208403580828607,
+     "half": 0.004051305596160014,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.013027254553382092,
+     "half": 0.0030225909571642514,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.015614171576685773,
+     "half": 0.005202787960788753,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.01811866888384216,
+     "half": 0.004026507915932469,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.010855998543140762,
+     "half": 0.0030804143002387263,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": -7.21534356311351e-05,
+     "half": 0.004069199719352424,
+     "n": 490,
+     "distinguishable": false
+    },
+    "twoitem": {
+     "mean": -0.0006257135622030261,
+     "half": 0.0036342519962096072,
+     "n": 494,
+     "distinguishable": false
+    },
+    "threeitem": {
+     "mean": -0.0025244132013807095,
+     "half": 0.003914231859497416,
+     "n": 493,
+     "distinguishable": false
+    }
+   }
+  },
+  "do embeddings help at all?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.018177948579913686,
+     "half": 0.005423676443839316,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.0208403580828607,
+     "half": 0.004051305596160014,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.013027254553382092,
+     "half": 0.0030225909571642514,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.015614171576685773,
+     "half": 0.005202787960788753,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.01811866888384216,
+     "half": 0.004026507915932469,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.010855998543140762,
+     "half": 0.0030804143002387263,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": -7.21534356311351e-05,
+     "half": 0.004069199719352424,
+     "n": 490,
+     "distinguishable": false
+    },
+    "twoitem": {
+     "mean": -0.0006257135622030261,
+     "half": 0.0036342519962096072,
+     "n": 494,
+     "distinguishable": false
+    },
+    "threeitem": {
+     "mean": -0.0025244132013807095,
+     "half": 0.003914231859497416,
+     "n": 493,
+     "distinguishable": false
+    }
+   }
+  }
+ },
+ "ladder_means": {
+  "count": {
+   "lexical only": {
+    "oneitem": 0.8906855486086684,
+    "twoitem": 0.8906327551603306,
+    "threeitem": 0.9109234196745531
+   },
+   "semantic only": {
+    "oneitem": 0.9183073926257154,
+    "twoitem": 0.8255707898512903,
+    "threeitem": 0.7979607267904262
+   },
+   "both": {
+    "oneitem": 0.9088287000552298,
+    "twoitem": 0.9108055131981224,
+    "threeitem": 0.9237573648669635
+   },
+   "both, flat requirements": {
+    "oneitem": 0.9047549614462922,
+    "twoitem": 0.9078523628296126,
+    "threeitem": 0.9222827138931627
+   },
+   "both, ordinal identity": {
+    "oneitem": 0.8171409605828248,
+    "twoitem": 0.8560145368415428,
+    "threeitem": 0.8849481168586947
+   },
+   "both, flat, ordinal identity": {
+    "oneitem": 0.8098210352810549,
+    "twoitem": 0.8496990598121887,
+    "threeitem": 0.8833188727808257
+   },
+   "both, no ordinal, graded": {
+    "oneitem": 0.7563488220992667,
+    "twoitem": 0.8304206367961747,
+    "threeitem": 0.8708895525703547
+   },
+   "both, no ordinal": {
+    "oneitem": 0.748280229651331,
+    "twoitem": 0.8241980966237408,
+    "threeitem": 0.8694243828635282
+   },
+   "both + hierarchy": {
+    "oneitem": 0.9050725196198232,
+    "twoitem": 0.9059548320101944,
+    "threeitem": 0.9183023275827489
+   }
+  },
+  "weighted": {
+   "lexical only": {
+    "oneitem": 0.876247461487744,
+    "twoitem": 0.8767007260647696,
+    "threeitem": 0.8979531305998699
+   },
+   "semantic only": {
+    "oneitem": 0.8995737987833552,
+    "twoitem": 0.8093086500684638,
+    "threeitem": 0.7829252468034684
+   },
+   "both": {
+    "oneitem": 0.891672561619429,
+    "twoitem": 0.8942851414063068,
+    "threeitem": 0.9087957701251721
+   },
+   "both, flat requirements": {
+    "oneitem": 0.8855435441445162,
+    "twoitem": 0.8855569858219126,
+    "threeitem": 0.902247914389213
+   },
+   "both, ordinal identity": {
+    "oneitem": 0.8022304820135879,
+    "twoitem": 0.840172256946623,
+    "threeitem": 0.870977935766349
+   },
+   "both, flat, ordinal identity": {
+    "oneitem": 0.7929792286323495,
+    "twoitem": 0.8282811923299588,
+    "threeitem": 0.8643140484564559
+   },
+   "both, no ordinal, graded": {
+    "oneitem": 0.7394520305522332,
+    "twoitem": 0.814439672834538,
+    "threeitem": 0.8562973734143533
+   },
+   "both, no ordinal": {
+    "oneitem": 0.7294714892227757,
+    "twoitem": 0.801617319451757,
+    "threeitem": 0.8489921637284954
+   },
+   "both + hierarchy": {
+    "oneitem": 0.8869078812008607,
+    "twoitem": 0.8896269479222618,
+    "threeitem": 0.9038114476842728
+   }
+  },
+  "qualified": {
+   "lexical only": {
+    "oneitem": 0.8907260179315266,
+    "twoitem": 0.8457432960945038,
+    "threeitem": 0.824266419600399
+   },
+   "semantic only": {
+    "oneitem": 0.9123409879435374,
+    "twoitem": 0.8508114538906699,
+    "threeitem": 0.8251260760283858
+   },
+   "both": {
+    "oneitem": 0.8897729558327994,
+    "twoitem": 0.8460590557273617,
+    "threeitem": 0.8224441027352435
+   },
+   "both, flat requirements": {
+    "oneitem": 0.8959216301277491,
+    "twoitem": 0.856171035109484,
+    "threeitem": 0.8331280121807272
+   },
+   "both, ordinal identity": {
+    "oneitem": 0.7773843220928152,
+    "twoitem": 0.7381653157355588,
+    "threeitem": 0.7121764923852226
+   },
+   "both, flat, ordinal identity": {
+    "oneitem": 0.7836170478897109,
+    "twoitem": 0.746053605209002,
+    "threeitem": 0.7191301872050715
+   },
+   "both, no ordinal, graded": {
+    "oneitem": 0.5828722258106546,
+    "twoitem": 0.6001568007411229,
+    "threeitem": 0.6023310961630803
+   },
+   "both, no ordinal": {
+    "oneitem": 0.5780916703318175,
+    "twoitem": 0.597436486127625,
+    "threeitem": 0.6018128596790177
+   },
+   "both + hierarchy": {
+    "oneitem": 0.8940192888233294,
+    "twoitem": 0.8502289774889557,
+    "threeitem": 0.8229705580221376
+   }
+  }
+ },
+ "ladder_contrasts": {
+  "does the ontology's requirement grading change the ranking?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.004073738608937623,
+     "half": 0.0016542877591312565,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.0029531503685098948,
+     "half": 0.002045790794031067,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.0014746509738006945,
+     "half": 0.0018196127082780668,
+     "n": 493,
+     "distinguishable": false
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.006129017474912719,
+     "half": 0.001810501376111995,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.008728155584394234,
+     "half": 0.0022133394766112174,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.00654785573595903,
+     "half": 0.0020061486244607974,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": -0.0061486742949496895,
+     "half": 0.002453069874534213,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": -0.010111979382122263,
+     "half": 0.0032198440166604455,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": -0.010683909445483704,
+     "half": 0.003358596489300473,
+     "n": 493,
+     "distinguishable": true
+    }
+   }
+  },
+  "do the ordered scales help?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.15247987795596307,
+     "half": 0.0109382388670753,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.08038487640194766,
+     "half": 0.00604634803674307,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.05286781229660873,
+     "half": 0.004341844239500885,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.1522205310671958,
+     "half": 0.010878480200295653,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.07984546857176877,
+     "half": 0.006092248357604252,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.052498396710818816,
+     "half": 0.004361718998487654,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.3069007300221448,
+     "half": 0.01724103721746709,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.24590225498623877,
+     "half": 0.013950730036226868,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.22011300657216307,
+     "half": 0.012198889285940324,
+     "n": 493,
+     "distinguishable": true
+    }
+   }
+  },
+  "do the published categories help?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.060792138483558154,
+     "half": 0.010308522211673374,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.0255939000453681,
+     "half": 0.005546930390781915,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.014058564288339936,
+     "half": 0.004066889351874562,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.06277845146135477,
+     "half": 0.010208883575295166,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.02573258411208502,
+     "half": 0.00557512492139661,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.014680562351995656,
+     "half": 0.004072277185561569,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.19451209628216062,
+     "half": 0.014550244237710987,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.1380085149944358,
+     "half": 0.0106469813247912,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.10984539622214219,
+     "half": 0.009246578789481444,
+     "n": 493,
+     "distinguishable": true
+    }
+   }
+  },
+  "does O*NET's ordering of the scales matter?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.09168773947240491,
+     "half": 0.007031958532043689,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.05479097635657957,
+     "half": 0.0043398169259919565,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.0388092480082688,
+     "half": 0.003680708082475866,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.08944207960584102,
+     "half": 0.006966979514507207,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.054112884459683756,
+     "half": 0.004334974987046612,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.03781783435882316,
+     "half": 0.003724112049611113,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.1123886337399842,
+     "half": 0.00807400406480156,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.10789373999180298,
+     "half": 0.007314671770758505,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.11026761035002088,
+     "half": 0.007672842813450947,
+     "n": 493,
+     "distinguishable": true
+    }
+   }
+  },
+  "does the hierarchy change the ranking?": {
+   "count": {
+    "oneitem": {
+     "mean": -0.003756180435406649,
+     "half": 0.0034438666851983003,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": -0.004850681187927927,
+     "half": 0.0023707373061096636,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": -0.0054550372842145775,
+     "half": 0.002027101175557571,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": -0.004764680418568207,
+     "half": 0.003459096567706281,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": -0.004658193484044933,
+     "half": 0.002396873487121003,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": -0.00498432244089927,
+     "half": 0.0019632955442276455,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.0042463329905299526,
+     "half": 0.0035606516337415,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.004169921761593901,
+     "half": 0.003190172324077441,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.0005264552868941327,
+     "half": 0.003059335952388189,
+     "n": 493,
+     "distinguishable": false
+    }
+   }
+  },
+  "what do grading and ordering add together?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.09900766477417497,
+     "half": 0.007218293470174547,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.06110645338593372,
+     "half": 0.004734231912639132,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.04043849208613776,
+     "half": 0.00391762639063133,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.09869333298707944,
+     "half": 0.007251752995419717,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.06600394907634806,
+     "half": 0.00473266740363054,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.04448172166871624,
+     "half": 0.004160347300366148,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.10615590794308849,
+     "half": 0.008183579741858259,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.10000545051835968,
+     "half": 0.007428829838383438,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.10331391553017197,
+     "half": 0.0076963460463510555,
+     "n": 493,
+     "distinguishable": true
+    }
+   }
+  },
+  "does ordering help without grading?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.09493392616523734,
+     "half": 0.0071877044273571935,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.05815330301742382,
+     "half": 0.0045602614884938854,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.03896384111233706,
+     "half": 0.00390089122678786,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.09256431551216672,
+     "half": 0.007135353088339021,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.05727579349195382,
+     "half": 0.004570685445428821,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.0379338659327572,
+     "half": 0.004019887579800833,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.11230458223803819,
+     "half": 0.00800951021770642,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.11011742990048196,
+     "half": 0.007390738199044452,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.11399782497565568,
+     "half": 0.007492590158238361,
+     "n": 493,
+     "distinguishable": true
+    }
+   }
+  },
+  "do the categories help without grading?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.06154080562972375,
+     "half": 0.010730602494002393,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.025500963188447964,
+     "half": 0.005925013100580081,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.013894489917297486,
+     "half": 0.0042470276258582945,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.06350773940957383,
+     "half": 0.010626115518129224,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.026663872878201805,
+     "half": 0.005946064325256316,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.015321884727960517,
+     "half": 0.004310651253320775,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.20552537755789335,
+     "half": 0.015298930079114906,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.14861711908137698,
+     "half": 0.011327292765146196,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.11731732752605378,
+     "half": 0.009664461845334415,
+     "n": 493,
+     "distinguishable": true
+    }
+   }
+  },
+  "does the ordinal reading help?": {
+   "count": {
+    "oneitem": {
+     "mean": 0.1564747317949611,
+     "half": 0.01142315356641181,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.08365426620587178,
+     "half": 0.006306252329176667,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.05285833102963455,
+     "half": 0.004438793368182401,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.15607205492174053,
+     "half": 0.011378218492941574,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.08393966637015562,
+     "half": 0.00643398862361183,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.05325575066071772,
+     "half": 0.004497185777733629,
+     "n": 493,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.31782995979593154,
+     "half": 0.017750254937992833,
+     "n": 490,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.25873454898185894,
+     "half": 0.01453795617329499,
+     "n": 494,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.23131515250170948,
+     "half": 0.012393826070397677,
+     "n": 493,
+     "distinguishable": true
+    }
+   }
+  }
+ },
+ "status_share": {
+  "4.A": {
+   "unmatched": 893950,
+   "related": 40560,
+   "exact": 23404
+  },
+  "2.B": {
+   "unmatched": 612323,
+   "related": 210096,
+   "exact": 58860
+  },
+  "1.A": {
+   "related": 229383,
+   "unmatched": 1111189,
+   "exact": 78620
+  },
+  "2.E": {
+   "unmatched": 1169947,
+   "exact": 149476,
+   "related": 302430
+  },
+  "1.D": {
+   "exact": 175347,
+   "unmatched": 674762,
+   "related": 650972
+  },
+  "2.C": {
+   "unmatched": 983505,
+   "exact": 97934,
+   "related": 231155
+  },
+  "ordinal": {
+   "met": 637925,
+   "falls short": 451307,
+   "not stated": 168718
+  },
+  "2.A": {
+   "unmatched": 357012,
+   "exact": 59232,
+   "related": 182510
+  }
+ }
+}

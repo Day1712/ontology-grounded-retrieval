@@ -1,0 +1,863 @@
+{
+ "meta": {
+  "format": 1,
+  "encoder": "bge-m3-dense",
+  "model": "BAAI/bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "pooling": "cls",
+  "query_template": "{text}",
+  "document_template": "{text}",
+  "max_length": 8192,
+  "dtype": "torch.float32",
+  "device": "mps",
+  "separator": "\n\n",
+  "stimuli": [
+   "Kenya Williams",
+   "Ebony Williams",
+   "Chandra Williams",
+   "Monique Williams",
+   "Lawanda Williams",
+   "Asha Williams",
+   "Aisha Williams",
+   "Tasha Williams",
+   "Desiree Williams",
+   "Sheena Williams",
+   "Nisha Williams",
+   "Keisha Williams",
+   "Tamika Williams",
+   "Tanisha Williams",
+   "Latoya Williams",
+   "Damaris Williams",
+   "Demetria Williams",
+   "Latasha Williams",
+   "Latrice Williams",
+   "Latisha Williams",
+   "Jackson Williams",
+   "Abdul Williams",
+   "Ahmad Williams",
+   "Mohammad Williams",
+   "Jerome Williams",
+   "Dante Williams",
+   "Lamar Williams",
+   "Jamal Williams",
+   "Desmond Williams",
+   "Darius Williams",
+   "Darrell Williams",
+   "Leroy Williams",
+   "Tyrone Williams",
+   "Lamont Williams",
+   "Cedric Williams",
+   "Terrell Williams",
+   "Jermaine Williams",
+   "Darnell Williams",
+   "Demetrius Williams",
+   "Dewayne Williams",
+   "Virginia Williams",
+   "Katie Williams",
+   "Daisy Williams",
+   "Danielle Williams",
+   "Courtney Williams",
+   "Laurie Williams",
+   "Brittany Williams",
+   "Christy Williams",
+   "Melinda Williams",
+   "Terri Williams",
+   "Lillian Williams",
+   "Ethel Williams",
+   "Mildred Williams",
+   "Marlene Williams",
+   "Aimee Williams",
+   "Sherri Williams",
+   "Vickie Williams",
+   "Aileen Williams",
+   "Rebeca Williams",
+   "Daniel Williams",
+   "Spencer Williams",
+   "Shawn Williams",
+   "Teddy Williams",
+   "Ricky Williams",
+   "Randall Williams",
+   "Cary Williams",
+   "Ernie Williams",
+   "Denny Williams",
+   "Sylvester Williams",
+   "Mathew Williams",
+   "Scotty Williams",
+   "Donnie Williams",
+   "Timmy Williams",
+   "Donny Williams",
+   "Johnnie Williams",
+   "Earnest Williams",
+   "Johnathan Williams",
+   "Bennie Williams",
+   "Wilbert Williams",
+   "3B XW",
+   "3H SQN",
+   "5H BUGR",
+   "CEGW GD",
+   "E3 EY",
+   "FL4 VA",
+   "FM KA3",
+   "G7 EH",
+   "HT FY",
+   "KBZX XL",
+   "N8 DU",
+   "QC7 TT",
+   "RB MRZ",
+   "USTW DR",
+   "VD R8",
+   "VELV PJ",
+   "VRPL BG",
+   "XHM3 CS",
+   "YW JF",
+   "ZB PW",
+   "<none>"
+  ],
+  "groups": [
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BF",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "BM",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WF",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "WM",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "ID",
+   "PLAIN"
+  ],
+  "kinds": [
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "name",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "identifier",
+   "plain"
+  ],
+  "pool_seed": 20240717,
+  "focal_seed": 20240718,
+  "pool_assignment": "277ee90e9aabcb6307632edb053633548224899cff7f26bc8d6e894baf8c1259",
+  "corpus": "1b8fb8f76784c0de437112c13e36e84dbc227cfae98d7f6613a94523cb51b754",
+  "batches": [
+   "oneitem",
+   "twoitem",
+   "threeitem"
+  ],
+  "k": 10,
+  "focal": 100,
+  "lexically_inert": true,
+  "environment": {
+   "python": "3.13.12",
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "torch": "2.13.0",
+   "transformers": "5.15.1",
+   "numpy": "2.5.2"
+  },
+  "verification": {
+   "longest_tokens": {
+    "document": 1048,
+    "query": 1056
+   },
+   "headroom": 7136,
+   "sides": {
+    "query": {
+     "min_cosine_agreement": 1.0,
+     "st_shipped_prompt": "",
+     "prefix_matches_published": true,
+     "agrees": true
+    },
+    "document": {
+     "min_cosine_agreement": 1.0,
+     "st_shipped_prompt": "",
+     "prefix_matches_published": true,
+     "agrees": true
+    }
+   }
+  }
+ },
+ "bm25": {
+  "checked": 297,
+  "identical": true,
+  "max_score_change": 0.0,
+  "by_name": {
+   "Kenya Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Ebony Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Chandra Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Monique Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Lawanda Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Asha Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Aisha Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Tasha Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Desiree Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Sheena Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Nisha Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Keisha Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Tamika Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Tanisha Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Latoya Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Damaris Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Demetria Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Latasha Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Latrice Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Latisha Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Jackson Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Abdul Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Ahmad Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Mohammad Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Jerome Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Dante Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Lamar Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Jamal Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Desmond Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Darius Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Darrell Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Leroy Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Tyrone Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Lamont Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Cedric Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Terrell Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Jermaine Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Darnell Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Demetrius Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Dewayne Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Virginia Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Katie Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Daisy Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Danielle Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Courtney Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Laurie Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Brittany Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Christy Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Melinda Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Terri Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Lillian Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Ethel Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Mildred Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Marlene Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Aimee Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Sherri Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Vickie Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Aileen Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Rebeca Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Daniel Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Spencer Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Shawn Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Teddy Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Ricky Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Randall Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Cary Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Ernie Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Denny Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Sylvester Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Mathew Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Scotty Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Donnie Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Timmy Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Donny Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Johnnie Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Earnest Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Johnathan Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Bennie Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "Wilbert Williams": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "3B XW": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "3H SQN": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "5H BUGR": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "CEGW GD": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "E3 EY": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "FL4 VA": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "FM KA3": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "G7 EH": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "HT FY": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "KBZX XL": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "N8 DU": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "QC7 TT": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "RB MRZ": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "USTW DR": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "VD R8": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "VELV PJ": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "VRPL BG": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "XHM3 CS": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "YW JF": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   },
+   "ZB PW": {
+    "max_score_change": 0.0,
+    "entered_top10": 0,
+    "left_top10": 0
+   }
+  }
+ }
+}

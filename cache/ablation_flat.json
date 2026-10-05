@@ -1,0 +1,299 @@
+{
+ "means": {
+  "count": {
+   "both": {
+    "oneitem": 0.9088287000552298,
+    "twoitem": 0.9108055131981224,
+    "threeitem": 0.9237573648669635
+   },
+   "both, flat requirements": {
+    "oneitem": 0.9047549614462922,
+    "twoitem": 0.9078523628296126,
+    "threeitem": 0.9222827138931627
+   },
+   "both, flat, ordinal identity": {
+    "oneitem": 0.8098210352810549,
+    "twoitem": 0.8496990598121887,
+    "threeitem": 0.8833188727808257
+   },
+   "both, ordinal identity": {
+    "oneitem": 0.8171409605828248,
+    "twoitem": 0.8560145368415428,
+    "threeitem": 0.8849481168586947
+   },
+   "both, no ordinal": {
+    "oneitem": 0.748280229651331,
+    "twoitem": 0.8241980966237408,
+    "threeitem": 0.8694243828635282
+   }
+  },
+  "weighted": {
+   "both": {
+    "oneitem": 0.891672561619429,
+    "twoitem": 0.8942851414063068,
+    "threeitem": 0.9087957701251721
+   },
+   "both, flat requirements": {
+    "oneitem": 0.8855435441445162,
+    "twoitem": 0.8855569858219126,
+    "threeitem": 0.902247914389213
+   },
+   "both, flat, ordinal identity": {
+    "oneitem": 0.7929792286323495,
+    "twoitem": 0.8282811923299588,
+    "threeitem": 0.8643140484564559
+   },
+   "both, ordinal identity": {
+    "oneitem": 0.8022304820135879,
+    "twoitem": 0.840172256946623,
+    "threeitem": 0.870977935766349
+   },
+   "both, no ordinal": {
+    "oneitem": 0.7294714892227757,
+    "twoitem": 0.801617319451757,
+    "threeitem": 0.8489921637284954
+   }
+  },
+  "qualified": {
+   "both": {
+    "oneitem": 0.8897729558327994,
+    "twoitem": 0.8460590557273617,
+    "threeitem": 0.8224441027352435
+   },
+   "both, flat requirements": {
+    "oneitem": 0.8959216301277491,
+    "twoitem": 0.856171035109484,
+    "threeitem": 0.8331280121807272
+   },
+   "both, flat, ordinal identity": {
+    "oneitem": 0.7836170478897109,
+    "twoitem": 0.746053605209002,
+    "threeitem": 0.7191301872050715
+   },
+   "both, ordinal identity": {
+    "oneitem": 0.7773843220928152,
+    "twoitem": 0.7381653157355588,
+    "threeitem": 0.7121764923852226
+   },
+   "both, no ordinal": {
+    "oneitem": 0.5780916703318175,
+    "twoitem": 0.597436486127625,
+    "threeitem": 0.6018128596790177
+   }
+  }
+ },
+ "contrasts": {
+  "full vs flat": {
+   "count": {
+    "oneitem": {
+     "mean": 0.09900766477417497,
+     "half": 0.007218293470174547,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.06110645338593372,
+     "half": 0.004734231912639132,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.04043849208613776,
+     "half": 0.00391762639063133,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.09869333298707944,
+     "half": 0.007251752995419717,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.06600394907634806,
+     "half": 0.00473266740363054,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.04448172166871624,
+     "half": 0.004160347300366148,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.10615590794308849,
+     "half": 0.008183579741858259,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.10000545051835968,
+     "half": 0.007428829838383438,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.10331391553017197,
+     "half": 0.0076963460463510555,
+     "distinguishable": true
+    }
+   }
+  },
+  "ordering, ungraded": {
+   "count": {
+    "oneitem": {
+     "mean": 0.09493392616523734,
+     "half": 0.0071877044273571935,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.05815330301742382,
+     "half": 0.0045602614884938854,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.03896384111233706,
+     "half": 0.00390089122678786,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.09256431551216672,
+     "half": 0.007135353088339021,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.05727579349195382,
+     "half": 0.004570685445428821,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.0379338659327572,
+     "half": 0.004019887579800833,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.11230458223803819,
+     "half": 0.00800951021770642,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.11011742990048196,
+     "half": 0.007390738199044452,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.11399782497565568,
+     "half": 0.007492590158238361,
+     "distinguishable": true
+    }
+   }
+  },
+  "categories, ungraded": {
+   "count": {
+    "oneitem": {
+     "mean": 0.06154080562972375,
+     "half": 0.010730602494002393,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.025500963188447964,
+     "half": 0.005925013100580081,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.013894489917297486,
+     "half": 0.0042470276258582945,
+     "distinguishable": true
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.06350773940957383,
+     "half": 0.010626115518129224,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.026663872878201805,
+     "half": 0.005946064325256316,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.015321884727960517,
+     "half": 0.004310651253320775,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": 0.20552537755789335,
+     "half": 0.015298930079114906,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.14861711908137698,
+     "half": 0.011327292765146196,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.11731732752605378,
+     "half": 0.009664461845334415,
+     "distinguishable": true
+    }
+   }
+  },
+  "grading, unordered": {
+   "count": {
+    "oneitem": {
+     "mean": 0.007319925301770056,
+     "half": 0.0021375491906631696,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.006315477029354149,
+     "half": 0.002362692151655371,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.0016292440778689628,
+     "half": 0.001968155718469235,
+     "distinguishable": false
+    }
+   },
+   "weighted": {
+    "oneitem": {
+     "mean": 0.009251253381238417,
+     "half": 0.0024406992950811923,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": 0.011891064616664301,
+     "half": 0.0024903642940488817,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": 0.006663887309893076,
+     "half": 0.0021433052633583055,
+     "distinguishable": true
+    }
+   },
+   "qualified": {
+    "oneitem": {
+     "mean": -0.006232725796895706,
+     "half": 0.0027787885803876654,
+     "distinguishable": true
+    },
+    "twoitem": {
+     "mean": -0.00788828947344328,
+     "half": 0.0036309730579808302,
+     "distinguishable": true
+    },
+    "threeitem": {
+     "mean": -0.006953694819848895,
+     "half": 0.004109877839066583,
+     "distinguishable": true
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,29 @@
+# Textual cues for CNL-O's graded subproperties of cnlo:requires, read by
+# ranking_method/grade.py. The cues are O*NET's five importance-scale anchors,
+# mapped to CNL-O's three grades: extremely/very important -> Essential,
+# important -> Important, somewhat/not important -> Somewhat. Matching is
+# case-insensitive, longest cue first, so "very important" is not read as
+# "important".
+#
+# CNL-O defines the three relations against UWV relevance scores:
+#   cnlo:requiresHATEssential  "erg relevant"       (3)
+#   cnlo:requiresHATImportant  "redelijk relevant"  (2)
+#   cnlo:requiresHATSomewhat   "nauwelijks relevant" (1)
+
+@prefix cnlo: <https://linkeddata.competentnl.nl/def/competentnl#> .
+@prefix ext: <https://example.org/onet-retrieval#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ext:cue a rdf:Property ;
+    rdfs:label "cue" ;
+    rdfs:comment "A phrase whose presence in the sentence supporting a requirement states this relation rather than the generic cnlo:requires." .
+
+cnlo:requiresHATEssential
+    ext:cue "extremely important", "very important" .
+
+cnlo:requiresHATImportant
+    ext:cue "important" .
+
+cnlo:requiresHATSomewhat
+    ext:cue "somewhat important", "not important" .

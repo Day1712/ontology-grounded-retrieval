@@ -1,0 +1,443 @@
+{
+ "qwen3-embedding-0.6b": {
+  "meta": {
+   "encoder": "qwen3-embedding-0.6b",
+   "model": "Qwen/Qwen3-Embedding-0.6B",
+   "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+   "device": "mps",
+   "dtype": "torch.float32",
+   "focal_cvs": 100,
+   "pairs": 49235,
+   "stimuli": 100,
+   "bm25_identical": true
+  },
+  "A_sensitivity": {
+   "identifier": {
+    "stimuli": 20,
+    "median_normalised_mad": 0.12472645938396454,
+    "p90_normalised_mad": 0.20796635746955872,
+    "median_raw_mad": 0.007878690958023071
+   },
+   "name": {
+    "stimuli": 79,
+    "median_normalised_mad": 0.11095797270536423,
+    "p90_normalised_mad": 0.1561216413974762,
+    "median_raw_mad": 0.006971240043640137
+   },
+   "name_over_identifier": 0.8896105385609105
+  },
+  "B1_rank_consequence": {
+   "bands": [
+    {
+     "band": "1-10",
+     "pairs": 1060,
+     "median_span": 3.0,
+     "p90_span": 8.0
+    },
+    {
+     "band": "11-25",
+     "pairs": 1601,
+     "median_span": 11.2,
+     "p90_span": 21.0
+    },
+    {
+     "band": "26-50",
+     "pairs": 2567,
+     "median_span": 25.2,
+     "p90_span": 40.400000000000006
+    },
+    {
+     "band": "51-100",
+     "pairs": 5091,
+     "median_span": 46.0,
+     "p90_span": 69.6
+    },
+    {
+     "band": "101-250",
+     "pairs": 15480,
+     "median_span": 79.60000000000005,
+     "p90_span": 112.0
+    },
+    {
+     "band": "251-+",
+     "pairs": 23436,
+     "median_span": 69.39999999999998,
+     "p90_span": 107.59999999999997
+    }
+   ],
+   "note": "rank span is comparable within a band only"
+  },
+  "B2_decision_instability": {
+   "k": 10,
+   "boundary_band": "1-20",
+   "pairs_in_band": 2140,
+   "pairs_total": 49235,
+   "mean_disagreement": 0.15719013428702297,
+   "median_disagreement": 0.049983771502758886,
+   "share_fully_stable": 0.4009345794392523
+  },
+  "C_demographic_structure": {
+   "variance_share_demographic": 0.10750161856412888,
+   "interpretation": "demographic grouping accounts for 10.8% of the variation between names; the remainder is individual-name variation",
+   "by_group": {
+    "BF": {
+     "names": 20,
+     "mean_centred_score": 0.0026834961026906967,
+     "mean_centred_score_pool_sd": 0.04106517136096954,
+     "mean_rank": 233.77358281710167,
+     "top_k_probability_boundary": 0.5408878504672897
+    },
+    "BM": {
+     "names": 20,
+     "mean_centred_score": -0.0010163831757381558,
+     "mean_centred_score_pool_sd": -0.014826854690909386,
+     "mean_rank": 242.24905453437594,
+     "top_k_probability_boundary": 0.5029439252336448
+    },
+    "WF": {
+     "names": 19,
+     "mean_centred_score": 0.0001838785974541679,
+     "mean_centred_score_pool_sd": 0.001653313753195107,
+     "mean_rank": 239.81624753464854,
+     "top_k_probability_boundary": 0.5191588785046729
+    },
+    "WM": {
+     "names": 20,
+     "mean_centred_score": -0.0018417973769828677,
+     "mean_centred_score_pool_sd": -0.027808958664536476,
+     "mean_rank": 244.23588808774247,
+     "top_k_probability_boundary": 0.49098130841121496
+    }
+   },
+   "contrasts": {
+    "F-M": {
+     "names": [
+      39,
+      40
+     ],
+     "centred_score": 0.002894823905080557,
+     "mean_rank": -6.525026195665475,
+     "top_k_probability_boundary": 0.03333932422717467
+    },
+    "B-W": {
+     "names": [
+      40,
+      39
+     ],
+     "centred_score": 0.001688486197963357,
+     "mean_rank": -4.071411193829704,
+     "top_k_probability_boundary": 0.017207045291157463
+    },
+    "BF-WM": {
+     "names": [
+      20,
+      20
+     ],
+     "centred_score": 0.004525293596088886,
+     "mean_rank": -10.462305270640798,
+     "top_k_probability_boundary": 0.049906542056074754
+    }
+   }
+  },
+  "D_plain_reference": {
+   "median_central_rank_under_names": 239.0,
+   "median_rank_unnamed_in_named_field": 228.0,
+   "median_rank_unnamed_in_unnamed_field": 241.0,
+   "note": "reference only; excluded from A, B and C because an unnamed CV among named competitors varies in more than which name it carries"
+  }
+ },
+ "bge-m3-dense": {
+  "meta": {
+   "encoder": "bge-m3-dense",
+   "model": "BAAI/bge-m3",
+   "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+   "device": "mps",
+   "dtype": "torch.float32",
+   "focal_cvs": 100,
+   "pairs": 49235,
+   "stimuli": 100,
+   "bm25_identical": true
+  },
+  "A_sensitivity": {
+   "identifier": {
+    "stimuli": 20,
+    "median_normalised_mad": 0.14398981630802155,
+    "p90_normalised_mad": 0.21923837065696716,
+    "median_raw_mad": 0.006079196929931641
+   },
+   "name": {
+    "stimuli": 79,
+    "median_normalised_mad": 0.10611780732870102,
+    "p90_normalised_mad": 0.14839431643486023,
+    "median_raw_mad": 0.004480481147766113
+   },
+   "name_over_identifier": 0.7369813369418771
+  },
+  "B1_rank_consequence": {
+   "bands": [
+    {
+     "band": "1-10",
+     "pairs": 923,
+     "median_span": 2.0,
+     "p90_span": 7.360000000000019
+    },
+    {
+     "band": "11-25",
+     "pairs": 1646,
+     "median_span": 12.0,
+     "p90_span": 22.300000000000008
+    },
+    {
+     "band": "26-50",
+     "pairs": 2732,
+     "median_span": 26.400000000000006,
+     "p90_span": 42.2
+    },
+    {
+     "band": "51-100",
+     "pairs": 5554,
+     "median_span": 46.2,
+     "p90_span": 69.13999999999997
+    },
+    {
+     "band": "101-250",
+     "pairs": 15627,
+     "median_span": 77.40000000000003,
+     "p90_span": 112.20000000000005
+    },
+    {
+     "band": "251-+",
+     "pairs": 22753,
+     "median_span": 66.19999999999999,
+     "p90_span": 105.19999999999999
+    }
+   ],
+   "note": "rank span is comparable within a band only"
+  },
+  "B2_decision_instability": {
+   "k": 10,
+   "boundary_band": "1-20",
+   "pairs_in_band": 2012,
+   "pairs_total": 49235,
+   "mean_disagreement": 0.14340409990559724,
+   "median_disagreement": 0.049983771502758845,
+   "share_fully_stable": 0.3966202783300199
+  },
+  "C_demographic_structure": {
+   "variance_share_demographic": 0.19608251750469208,
+   "interpretation": "demographic grouping accounts for 19.6% of the variation between names; the remainder is individual-name variation",
+   "by_group": {
+    "BF": {
+     "names": 20,
+     "mean_centred_score": -0.00039165321504697204,
+     "mean_centred_score_pool_sd": -0.008852184750139713,
+     "mean_rank": 238.39048034934498,
+     "top_k_probability_boundary": 0.46565606361829026
+    },
+    "BM": {
+     "names": 20,
+     "mean_centred_score": -0.0008813365129753947,
+     "mean_centred_score_pool_sd": -0.021463528275489807,
+     "mean_rank": 240.19419721742662,
+     "top_k_probability_boundary": 0.4525347912524851
+    },
+    "WF": {
+     "names": 19,
+     "mean_centred_score": 0.002705427585169673,
+     "mean_centred_score_pool_sd": 0.0639447495341301,
+     "mean_rank": 227.38559860604084,
+     "top_k_probability_boundary": 0.5276498901328869
+    },
+    "WM": {
+     "names": 20,
+     "mean_centred_score": -0.0012971678515896201,
+     "mean_centred_score_pool_sd": -0.030431825667619705,
+     "mean_rank": 241.44015537727228,
+     "top_k_probability_boundary": 0.4360089463220676
+    }
+   },
+   "contrasts": {
+    "F-M": {
+     "names": [
+      39,
+      40
+     ],
+     "centred_score": 0.002206433331593871,
+     "mean_rank": -7.788048592178285,
+     "top_k_probability_boundary": 0.051586315440689146
+    },
+    "B-W": {
+     "names": [
+      40,
+      39
+     ],
+     "centred_score": -0.0012893093517050147,
+     "mean_rank": 4.699275166457056,
+     "top_k_probability_boundary": -0.021559106897079072
+    },
+    "BF-WM": {
+     "names": [
+      20,
+      20
+     ],
+     "centred_score": 0.0009055146365426481,
+     "mean_rank": -3.049675027927293,
+     "top_k_probability_boundary": 0.029647117296222658
+    }
+   }
+  },
+  "D_plain_reference": {
+   "median_central_rank_under_names": 232.0,
+   "median_rank_unnamed_in_named_field": 175.0,
+   "median_rank_unnamed_in_unnamed_field": 241.0,
+   "note": "reference only; excluded from A, B and C because an unnamed CV among named competitors varies in more than which name it carries"
+  }
+ },
+ "embeddinggemma-300m": {
+  "meta": {
+   "encoder": "embeddinggemma-300m",
+   "model": "google/embeddinggemma-300m",
+   "revision": "57c266a740f537b4dc058e1b0cda161fd15afa75",
+   "device": "mps",
+   "dtype": "torch.float32",
+   "focal_cvs": 100,
+   "pairs": 49235,
+   "stimuli": 100,
+   "bm25_identical": true
+  },
+  "A_sensitivity": {
+   "identifier": {
+    "stimuli": 20,
+    "median_normalised_mad": 0.12027715146541595,
+    "p90_normalised_mad": 0.19282658398151398,
+    "median_raw_mad": 0.0076590776443481445
+   },
+   "name": {
+    "stimuli": 79,
+    "median_normalised_mad": 0.10356856137514114,
+    "p90_normalised_mad": 0.145978644490242,
+    "median_raw_mad": 0.006571680307388306
+   },
+   "name_over_identifier": 0.861082592273736
+  },
+  "B1_rank_consequence": {
+   "bands": [
+    {
+     "band": "1-10",
+     "pairs": 918,
+     "median_span": 2.0,
+     "p90_span": 5.0
+    },
+    {
+     "band": "11-25",
+     "pairs": 1437,
+     "median_span": 9.0,
+     "p90_span": 17.880000000000024
+    },
+    {
+     "band": "26-50",
+     "pairs": 2454,
+     "median_span": 20.400000000000006,
+     "p90_span": 34.4
+    },
+    {
+     "band": "51-100",
+     "pairs": 5268,
+     "median_span": 40.0,
+     "p90_span": 62.400000000000006
+    },
+    {
+     "band": "101-250",
+     "pairs": 16442,
+     "median_span": 74.00000000000001,
+     "p90_span": 108.4
+    },
+    {
+     "band": "251-+",
+     "pairs": 22716,
+     "median_span": 73.80000000000001,
+     "p90_span": 112.00000000000003
+    }
+   ],
+   "note": "rank span is comparable within a band only"
+  },
+  "B2_decision_instability": {
+   "k": 10,
+   "boundary_band": "1-20",
+   "pairs_in_band": 1880,
+   "pairs_total": 49235,
+   "mean_disagreement": 0.11378766219865062,
+   "median_disagreement": 0.0,
+   "share_fully_stable": 0.5117021276595745
+  },
+  "C_demographic_structure": {
+   "variance_share_demographic": 0.00046934434794820845,
+   "interpretation": "demographic grouping accounts for 0.0% of the variation between names; the remainder is individual-name variation",
+   "by_group": {
+    "BF": {
+     "names": 20,
+     "mean_centred_score": 0.00015928821812849492,
+     "mean_centred_score_pool_sd": 0.0030282007064670324,
+     "mean_rank": 233.3707078297959,
+     "top_k_probability_boundary": 0.4902659574468085
+    },
+    "BM": {
+     "names": 20,
+     "mean_centred_score": -1.957649874384515e-05,
+     "mean_centred_score_pool_sd": -0.0016768297646194696,
+     "mean_rank": 234.44219153041536,
+     "top_k_probability_boundary": 0.5162765957446809
+    },
+    "WF": {
+     "names": 19,
+     "mean_centred_score": -3.6160949093755335e-05,
+     "mean_centred_score_pool_sd": 0.0003361896378919482,
+     "mean_rank": 233.80854334475367,
+     "top_k_probability_boundary": 0.49305711086226206
+    },
+    "WM": {
+     "names": 20,
+     "mean_centred_score": -0.00010535844194237143,
+     "mean_centred_score_pool_sd": -0.0016707420581951737,
+     "mean_rank": 234.47245150807353,
+     "top_k_probability_boundary": 0.5247606382978723
+    }
+   },
+   "contrasts": {
+    "F-M": {
+     "names": [
+      39,
+      40
+     ],
+     "centred_score": 0.000126536819152534,
+     "mean_rank": -0.8733092078024356,
+     "top_k_probability_boundary": -0.028892866884888124
+    },
+    "B-W": {
+     "names": [
+      40,
+      39
+     ],
+     "centred_score": 0.00014150270726531744,
+     "mean_rank": -0.2425593894274698,
+     "top_k_probability_boundary": -0.006044053464266286
+    },
+    "BF-WM": {
+     "names": [
+      20,
+      20
+     ],
+     "centred_score": 0.00026464666007086635,
+     "mean_rank": -1.1017436782776429,
+     "top_k_probability_boundary": -0.03449468085106383
+    }
+   }
+  },
+  "D_plain_reference": {
+   "median_central_rank_under_names": 234.0,
+   "median_rank_unnamed_in_named_field": 146.0,
+   "median_rank_unnamed_in_unnamed_field": 240.0,
+   "note": "reference only; excluded from A, B and C because an unnamed CV among named competitors varies in more than which name it carries"
+  }
+ }
+}

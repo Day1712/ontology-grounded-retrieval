@@ -1,0 +1,98 @@
+{
+ "graphs": [
+  "cache/graph.ttl"
+ ],
+ "triples": 532411,
+ "schema_triples": 1284,
+ "claims": [
+  [
+   "https://example.org/onet-retrieval#involvesActivity",
+   [
+    "http://purl.org/coreo#TaskType"
+   ],
+   true
+  ],
+  [
+   "https://example.org/onet-retrieval#performsActivity",
+   [
+    "http://purl.org/coreo#TaskType"
+   ],
+   false
+  ],
+  [
+   "https://example.org/onet-retrieval#requiresTechnology",
+   [
+    "http://purl.org/coreo#ResourceType"
+   ],
+   true
+  ],
+  [
+   "https://example.org/onet-retrieval#usesTechnology",
+   [
+    "http://purl.org/coreo#ResourceType"
+   ],
+   false
+  ],
+  [
+   "https://example.org/onet-retrieval#workStyle",
+   [
+    "https://linkeddata.competentnl.nl/def/competentnl#HumanAspectType"
+   ],
+   false
+  ],
+  [
+   "https://linkeddata.competentnl.nl/def/competentnl#requires",
+   [
+    "https://linkeddata.competentnl.nl/def/competentnl#HumanAspectType"
+   ],
+   true
+  ],
+  [
+   "https://linkeddata.competentnl.nl/def/competentnl#requiresHATEssential",
+   [
+    "https://linkeddata.competentnl.nl/def/competentnl#HumanAspectType"
+   ],
+   true
+  ],
+  [
+   "https://linkeddata.competentnl.nl/def/competentnl#requiresHATImportant",
+   [
+    "https://linkeddata.competentnl.nl/def/competentnl#HumanAspectType"
+   ],
+   true
+  ],
+  [
+   "https://linkeddata.competentnl.nl/def/competentnl#requiresHATSomewhat",
+   [
+    "https://linkeddata.competentnl.nl/def/competentnl#HumanAspectType"
+   ],
+   true
+  ],
+  [
+   "https://schema.org/skills",
+   [
+    "https://linkeddata.competentnl.nl/def/competentnl#HumanAspectType"
+   ],
+   false
+  ]
+ ],
+ "unconstrained": [
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+  "http://www.w3.org/ns/oa#end",
+  "http://www.w3.org/ns/oa#hasBody",
+  "http://www.w3.org/ns/oa#hasSelector",
+  "http://www.w3.org/ns/oa#hasSource",
+  "http://www.w3.org/ns/oa#hasTarget",
+  "http://www.w3.org/ns/oa#start",
+  "https://example.org/onet-retrieval#onetCategory",
+  "https://schema.org/about"
+ ],
+ "violations": [],
+ "falsification": {
+  "relation": "https://example.org/onet-retrieval#requiresTechnology",
+  "declared_range": "http://purl.org/coreo#ResourceType",
+  "flipped_to": "https://linkeddata.competentnl.nl/def/competentnl#HumanAspectType",
+  "violations": 3253,
+  "distinct_objects": 93
+ }
+}

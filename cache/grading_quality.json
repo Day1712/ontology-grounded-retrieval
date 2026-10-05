@@ -1,0 +1,200 @@
+{
+ "reading": {
+  "gradeable requirements": 11460,
+  "graded": 0.3702443280977312,
+  "groups": {
+   "essential": {
+    "n": 1698,
+    "share": 0.1481675392670157,
+    "mean importance": 3.551932021466905,
+    "sd importance": 0.330484511108472,
+    "rated": 1677
+   },
+   "important": {
+    "n": 2394,
+    "share": 0.2089005235602094,
+    "mean importance": 2.6679301640723603,
+    "sd importance": 0.3170048807944286,
+    "rated": 2377
+   },
+   "somewhat": {
+    "n": 151,
+    "share": 0.013176265270506108,
+    "mean importance": 1.438476821192053,
+    "sd importance": 0.39137492398699714,
+    "rated": 151
+   },
+   "generic": {
+    "n": 7217,
+    "share": 0.6297556719022688,
+    "mean importance": 2.9803615404768142,
+    "sd importance": 0.9886562176174715,
+    "rated": 3817
+   }
+  }
+ },
+ "ndcg": {
+  "flat": {
+   "count": {
+    "oneitem": 0.9047549614462922,
+    "twoitem": 0.9078523628296126,
+    "threeitem": 0.9222827138931627
+   },
+   "weighted": {
+    "oneitem": 0.8855435441445162,
+    "twoitem": 0.8855569858219126,
+    "threeitem": 0.902247914389213
+   },
+   "qualified": {
+    "oneitem": 0.8959216301277491,
+    "twoitem": 0.856171035109484,
+    "threeitem": 0.8331280121807272
+   }
+  },
+  "graded": {
+   "count": {
+    "oneitem": 0.9088287000552298,
+    "twoitem": 0.9108055131981224,
+    "threeitem": 0.9237573648669635
+   },
+   "weighted": {
+    "oneitem": 0.891672561619429,
+    "twoitem": 0.8942851414063068,
+    "threeitem": 0.9087957701251721
+   },
+   "qualified": {
+    "oneitem": 0.8897729558327994,
+    "twoitem": 0.8460590557273617,
+    "threeitem": 0.8224441027352435
+   }
+  }
+ },
+ "displacement": {
+  "oneitem": {
+   "queries": 490,
+   "reordered": 0.30612244897959184,
+   "membership changed": 0.25510204081632654
+  },
+  "twoitem": {
+   "queries": 494,
+   "reordered": 0.5910931174089069,
+   "membership changed": 0.5323886639676113
+  },
+  "threeitem": {
+   "queries": 493,
+   "reordered": 0.6369168356997972,
+   "membership changed": 0.5598377281947262
+  }
+ },
+ "ungraded weight sensitivity": {
+  "1.0": {
+   "ndcg": {
+    "count": {
+     "oneitem": 0.8861683670217839,
+     "twoitem": 0.8822053172938419,
+     "threeitem": 0.8913359627965511
+    },
+    "weighted": {
+     "oneitem": 0.8635988363113813,
+     "twoitem": 0.8646457529146669,
+     "threeitem": 0.8749329734082403
+    },
+    "qualified": {
+     "oneitem": 0.8458136385496408,
+     "twoitem": 0.7914324570231686,
+     "threeitem": 0.7649568186574118
+    }
+   },
+   "displacement": {
+    "oneitem": {
+     "queries": 490,
+     "reordered": 0.673469387755102,
+     "membership changed": 0.6693877551020408
+    },
+    "twoitem": {
+     "queries": 494,
+     "reordered": 0.9008097165991903,
+     "membership changed": 0.8967611336032388
+    },
+    "threeitem": {
+     "queries": 493,
+     "reordered": 0.9290060851926978,
+     "membership changed": 0.9269776876267748
+    }
+   }
+  },
+  "2.0": {
+   "ndcg": {
+    "count": {
+     "oneitem": 0.9088287000552298,
+     "twoitem": 0.9108055131981224,
+     "threeitem": 0.9237573648669635
+    },
+    "weighted": {
+     "oneitem": 0.891672561619429,
+     "twoitem": 0.8942851414063068,
+     "threeitem": 0.9087957701251721
+    },
+    "qualified": {
+     "oneitem": 0.8897729558327994,
+     "twoitem": 0.8460590557273617,
+     "threeitem": 0.8224441027352435
+    }
+   },
+   "displacement": {
+    "oneitem": {
+     "queries": 490,
+     "reordered": 0.30612244897959184,
+     "membership changed": 0.25510204081632654
+    },
+    "twoitem": {
+     "queries": 494,
+     "reordered": 0.5910931174089069,
+     "membership changed": 0.5323886639676113
+    },
+    "threeitem": {
+     "queries": 493,
+     "reordered": 0.6369168356997972,
+     "membership changed": 0.5598377281947262
+    }
+   }
+  },
+  "3.0": {
+   "ndcg": {
+    "count": {
+     "oneitem": 0.9013818791138148,
+     "twoitem": 0.8990146006338738,
+     "threeitem": 0.9157679721673402
+    },
+    "weighted": {
+     "oneitem": 0.8850913436424384,
+     "twoitem": 0.8828308665471121,
+     "threeitem": 0.9013311035010675
+    },
+    "qualified": {
+     "oneitem": 0.9010351133142328,
+     "twoitem": 0.8590036726288988,
+     "threeitem": 0.8383912610155887
+    }
+   },
+   "displacement": {
+    "oneitem": {
+     "queries": 490,
+     "reordered": 0.44081632653061226,
+     "membership changed": 0.35306122448979593
+    },
+    "twoitem": {
+     "queries": 494,
+     "reordered": 0.7692307692307693,
+     "membership changed": 0.611336032388664
+    },
+    "threeitem": {
+     "queries": 493,
+     "reordered": 0.8580121703853956,
+     "membership changed": 0.6734279918864098
+    }
+   }
+  }
+ },
+ "stated ungraded weight": 2.0
+}

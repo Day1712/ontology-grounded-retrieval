@@ -1,0 +1,95 @@
+{
+ "bge-m3-dense": {
+  "model": "BAAI/bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "resolved_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "pinned": true,
+  "pooling": "cls",
+  "max_length": 8192,
+  "device": "mps",
+  "dtype": "torch.float32",
+  "sides": {
+   "query": {
+    "min_cosine_agreement": 1.0,
+    "st_shipped_prompt": "",
+    "prefix_matches_published": true,
+    "agrees": true
+   },
+   "document": {
+    "min_cosine_agreement": 1.0,
+    "st_shipped_prompt": "",
+    "prefix_matches_published": true,
+    "agrees": true
+   }
+  },
+  "longest_tokens": {
+   "document": 1048,
+   "query": 1056
+  },
+  "headroom": 7136,
+  "no_truncation": true,
+  "verified": true
+ },
+ "qwen3-embedding-0.6b": {
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "resolved_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "pinned": true,
+  "pooling": "last",
+  "max_length": 1280,
+  "device": "mps",
+  "dtype": "torch.float32",
+  "sides": {
+   "query": {
+    "min_cosine_agreement": 1.0,
+    "st_shipped_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+    "prefix_matches_published": false,
+    "agrees": true
+   },
+   "document": {
+    "min_cosine_agreement": 0.9999999403953552,
+    "st_shipped_prompt": "",
+    "prefix_matches_published": true,
+    "agrees": true
+   }
+  },
+  "longest_tokens": {
+   "document": 845,
+   "query": 921
+  },
+  "headroom": 359,
+  "no_truncation": true,
+  "verified": true
+ },
+ "embeddinggemma-300m": {
+  "model": "google/embeddinggemma-300m",
+  "revision": "57c266a740f537b4dc058e1b0cda161fd15afa75",
+  "resolved_revision": "57c266a740f537b4dc058e1b0cda161fd15afa75",
+  "pinned": true,
+  "pooling": "mean",
+  "max_length": 2048,
+  "device": "mps",
+  "dtype": "torch.float32",
+  "sides": {
+   "query": {
+    "min_cosine_agreement": 1.0,
+    "st_shipped_prompt": "task: search result | query: ",
+    "prefix_matches_published": true,
+    "agrees": true
+   },
+   "document": {
+    "min_cosine_agreement": 1.0,
+    "st_shipped_prompt": "title: none | text: ",
+    "prefix_matches_published": true,
+    "agrees": true
+   }
+  },
+  "longest_tokens": {
+   "document": 846,
+   "query": 917
+  },
+  "headroom": 1131,
+  "no_truncation": true,
+  "verified": true
+ }
+}

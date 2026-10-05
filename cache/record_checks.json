@@ -1,0 +1,11 @@
+{
+ "record": "cache/decisions.ttl",
+ "graph": "cache/graph.ttl",
+ "triples": 1810229,
+ "pairs": 14770,
+ "scores_reproduced": 14770,
+ "score_disagreements": [],
+ "verdict_disagreements": [],
+ "satisfied_by_targets": 23440,
+ "dangling": []
+}

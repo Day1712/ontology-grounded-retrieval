@@ -1,0 +1,64 @@
+PREFIX : <https://www.onetcenter.org/rdf/schema/onet/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <https://www.onetcenter.org/rdf/resources/onet/>
+
+<EducationCategory/05fa132a-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 1 ;
+  :categoryDescription "Less than a High School Diploma" ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .
+<EducationCategory/05faad1a-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 2 ;
+  :categoryDescription "High School Diploma - or the equivalent (for example, GED)" ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .
+<EducationCategory/05faad44-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 3 ;
+  :categoryDescription "Post-Secondary Certificate - awarded for training completed after high school (for example, in agriculture or natural resources, computer services, personal or culinary services, engineering technologies, healthcare, construction trades, mechanic and repair technologies, or precision production)" ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .
+<EducationCategory/05fa12ff-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 4 ;
+  :categoryDescription "Some College Courses" ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .
+<EducationCategory/05faad77-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 5 ;
+  :categoryDescription "Associate's Degree (or other 2-year degree)" ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .
+<EducationCategory/05fa12c1-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 6 ;
+  :categoryDescription "Bachelor's Degree" ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .
+<EducationCategory/05faade8-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 7 ;
+  :categoryDescription "Post-Baccalaureate Certificate - awarded for completion of an organized program of study; designed for people who have completed a Baccalaureate degree but do not meet the requirements of academic degrees carrying the title of Master." ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .
+<EducationCategory/05faad9d-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 8 ;
+  :categoryDescription "Master's Degree" ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .
+<EducationCategory/05faae12-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 9 ;
+  :categoryDescription "Post-Master's Certificate - awarded for completion of an organized program of study; designed for people who have completed a Master's degree but do not meet the requirements of academic degrees at the doctoral level." ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .
+<EducationCategory/05faae3c-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 10 ;
+  :categoryDescription "First Professional Degree - awarded for completion of a program that: requires at least 2 years of college work before entrance into the program, includes a total of at least 6 academic years of work to complete, and provides all remaining academic requirements to begin practice in a profession." ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .
+<EducationCategory/05fa10ff-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 11 ;
+  :categoryDescription "Doctoral Degree" ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .
+<EducationCategory/05faadc2-603d-11f1-8990-005056bdd76e> a :EducationCategory ;
+  :category 12 ;
+  :categoryDescription "Post-Doctoral Training" ;
+  :refersTo <Element/55223815-1b12-11ea-8239-782bcb5df6ac> ,
+    <Scale/7aab0c83-603d-11f1-8990-005056bdd76e> .

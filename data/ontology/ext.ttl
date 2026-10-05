@@ -1,0 +1,176 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix onet:   <https://www.onetcenter.org/rdf/schema/onet/> .
+@prefix cnlo:   <https://linkeddata.competentnl.nl/def/competentnl#> .
+@prefix coreo:  <http://purl.org/coreo#> .
+@prefix oa:     <http://www.w3.org/ns/oa#> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix ext:    <https://example.org/onet-retrieval#> .
+
+# Local terms of the method. Domains and ranges use schema:domainIncludes and
+# schema:rangeIncludes; checks/conformance.py reads them.
+
+# --- Assertions -------------------------------------------------------------
+
+ext:workStyle a rdf:Property ;
+    schema:domainIncludes schema:Person ;
+    schema:rangeIncludes cnlo:HumanAspectType ;
+    rdfs:label "work style" ;
+    rdfs:comment "An O*NET Work Style (branch 1.D) held by a person. Candidate side of cnlo:requires." .
+
+# Range this method commits to when it uses schema:skills.
+schema:skills
+    schema:domainIncludes schema:Person ;
+    schema:rangeIncludes cnlo:HumanAspectType .
+
+ext:onetCategory a rdf:Property ;
+    schema:domainIncludes schema:Person, schema:JobPosting ;
+    schema:rangeIncludes onet:EducationCategory, onet:TrainingAndExperienceCategory ;
+    rdfs:label "O*NET category" ;
+    rdfs:comment "An O*NET education or related-work-experience category held by a person or required by a posting." .
+
+ext:requiresTechnology a rdf:Property ;
+    schema:domainIncludes cnlo:Occupation ;
+    schema:rangeIncludes coreo:ResourceType ;
+    rdfs:label "requires technology" ;
+    rdfs:comment "A role requires a software category (O*NET branch 2.E)." .
+
+ext:usesTechnology a rdf:Property ;
+    schema:domainIncludes schema:Person ;
+    schema:rangeIncludes coreo:ResourceType ;
+    rdfs:label "uses technology" ;
+    rdfs:comment "A person uses a software category (O*NET branch 2.E). Candidate side of ext:requiresTechnology." .
+
+ext:involvesActivity a rdf:Property ;
+    schema:domainIncludes cnlo:Occupation ;
+    schema:rangeIncludes coreo:TaskType ;
+    rdfs:label "involves activity" ;
+    rdfs:comment "A role involves a generalized work activity (O*NET branch 4.A)." .
+
+ext:performsActivity a rdf:Property ;
+    schema:domainIncludes schema:Person ;
+    schema:rangeIncludes coreo:TaskType ;
+    rdfs:label "performs activity" ;
+    rdfs:comment "A person performs a generalized work activity (O*NET branch 4.A). Candidate side of ext:involvesActivity." .
+
+# --- Hierarchy --------------------------------------------------------------
+
+# onet:memberOf is read as containment without subsumption.
+onet:memberOf rdfs:subPropertyOf skos:broader .
+
+ext:Satisfaction a rdfs:Class ;
+    rdfs:label "satisfaction" ;
+    rdfs:comment "The outcome of one requirement of a posting against one person's evidence." .
+
+ext:outcome a rdf:Property ;
+    schema:domainIncludes ext:Satisfaction ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "outcome" ;
+    rdfs:comment "One of exact, related, unmatched (concept requirements) or met, falls short, not stated (ordinal requirements)." .
+
+ext:via a rdf:Property ;
+    schema:domainIncludes ext:Satisfaction ;
+    schema:rangeIncludes onet:Element ;
+    rdfs:label "via" ;
+    rdfs:comment "The sibling element evidenced when the outcome is related." .
+
+ext:sharedConcept a rdf:Property ;
+    schema:domainIncludes ext:Satisfaction ;
+    schema:rangeIncludes onet:Element ;
+    rdfs:label "shared concept" ;
+    rdfs:comment "The parent element shared by the required element and ext:via." .
+
+# --- Records (written by ranking_method/record.py; not read by the ranking) ---
+
+ext:satisfiedBy a rdf:Property ;
+    schema:domainIncludes ext:Satisfaction ;
+    schema:rangeIncludes oa:Annotation ;
+    rdfs:label "satisfied by" ;
+    rdfs:comment "The annotation(s) on the candidate's document that supplied the evidence for this outcome." .
+
+ext:weight a rdf:Property ;
+    schema:domainIncludes ext:Satisfaction ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "weight" ;
+    rdfs:comment "The weight of this requirement in the score." .
+
+ext:Score a rdfs:Class ;
+    rdfs:label "score" ;
+    rdfs:comment "One candidate's score against one role, derived from the satisfactions of that pair." .
+
+ext:forRole a rdf:Property ;
+    schema:domainIncludes ext:Score ;
+    rdfs:label "for role" ;
+    rdfs:comment "The role this score is against (typed cnlo:Occupation in the assertion graph)." .
+
+ext:forCandidate a rdf:Property ;
+    schema:domainIncludes ext:Score ;
+    rdfs:label "for candidate" ;
+    rdfs:comment "The candidate this score is of (typed schema:Person in the assertion graph)." .
+
+ext:satisfiedWeight a rdf:Property ;
+    schema:domainIncludes ext:Score ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "satisfied weight" ;
+    rdfs:comment "Summed weight of the requirements met." .
+
+ext:totalWeight a rdf:Property ;
+    schema:domainIncludes ext:Score ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "total weight" ;
+    rdfs:comment "Summed weight of every requirement the role stated." .
+
+ext:coverage a rdf:Property ;
+    schema:domainIncludes ext:Score ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "coverage" ;
+    rdfs:comment "ext:satisfiedWeight divided by ext:totalWeight." .
+
+ext:relatedCoverage a rdf:Property ;
+    schema:domainIncludes ext:Score ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "related coverage" ;
+    rdfs:comment "The same quotient over requirements a sibling evidenced; zero when the hierarchy is off." .
+
+ext:rankingScore a rdf:Property ;
+    schema:domainIncludes ext:Score ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "ranking score" ;
+    rdfs:comment "The number the candidates were ordered by." .
+
+ext:rank a rdf:Property ;
+    schema:domainIncludes ext:Score ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "rank" ;
+    rdfs:comment "Position for this role, highest ranking score first, ties broken by candidate identifier." .
+
+ext:RankingPolicy a rdfs:Class ;
+    rdfs:subClassOf prov:Plan ;
+    rdfs:label "ranking policy" ;
+    rdfs:comment "The parameters a ranking was run under, named by a digest of all of them." .
+
+ext:policyDigest a rdf:Property ;
+    schema:domainIncludes ext:RankingPolicy ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "policy digest" ;
+    rdfs:comment "The digest the policy resource is named by." .
+
+ext:ladder a rdf:Property ;
+    schema:domainIncludes ext:RankingPolicy ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "ladder" ;
+    rdfs:comment "The method variant used: ordinal, exceeding, hierarchy and graded switches." .
+
+ext:ungradedWeight a rdf:Property ;
+    schema:domainIncludes ext:RankingPolicy ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "ungraded weight" ;
+    rdfs:comment "The weight of a requirement without a graded relation." .
+
+ext:candidatesConsidered a rdf:Property ;
+    schema:domainIncludes prov:Activity ;
+    schema:rangeIncludes rdfs:Literal ;
+    rdfs:label "candidates considered" ;
+    rdfs:comment "How many candidates the ranking scored." .

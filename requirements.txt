@@ -1,0 +1,16 @@
+# Direct dependencies, pinned to the versions this was verified on:
+# Python 3.13.5, macOS 15 (Darwin 24.6.0), Apple M3, device "mps".
+#
+# pytrec_eval-terrier is the maintained fork of pytrec_eval. It ships arm64
+# wheels and imports as `pytrec_eval`; the original is source-only.
+#
+# torch, transformers and sentence-transformers are needed even for a cached
+# run, because ranking_method.link imports SentenceTransformer at module level.
+
+bm25s==0.3.10
+numpy==2.5.2
+pytrec_eval-terrier==0.5.10
+rdflib==7.6.0
+sentence-transformers==6.0.0
+torch==2.13.0
+transformers==5.15.1
